@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  3 APR 2020 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  8 APR 2020 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -746,8 +746,232 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 \RaggedRightParindent=\skip69
 \JustifyingParindent=\skip70
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfnodeparttextbox=\box60
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2019/04/04 v3.1.2 (3.1.2)
+\pgf@nodesepstart=\dimen261
+\pgf@nodesepend=\dimen262
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen263
+\pgffor@skip=\dimen264
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgf@plot@mark@count=\count163
+\pgfplotmarksize=\dimen265
+)
+\tikz@lastx=\dimen266
+\tikz@lasty=\dimen267
+\tikz@lastxsaved=\dimen268
+\tikz@lastysaved=\dimen269
+\tikzleveldistance=\dimen270
+\tikzsiblingdistance=\dimen271
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count164
+\tikznumberofchildren=\count165
+\tikznumberofcurrentchild=\count166
+\tikz@fig@count=\count167
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfmatrixcurrentrow=\count168
+\pgfmatrixcurrentcolumn=\count169
+\pgf@matrix@numberofcolumns=\count170
+)
+\tikz@expandcount=\count171
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.callouts.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.callouts.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\pgfnodepartlowerbox=\box65
+\pgfnodeparttwobox=\box66
+\pgfnodepartthreebox=\box67
+\pgfnodepartfourbox=\box68
+\pgfnodeparttwentybox=\box69
+\pgfnodepartnineteenbox=\box70
+\pgfnodeparteighteenbox=\box71
+\pgfnodepartseventeenbox=\box72
+\pgfnodepartsixteenbox=\box73
+\pgfnodepartfifteenbox=\box74
+\pgfnodepartfourteenbox=\box75
+\pgfnodepartthirteenbox=\box76
+\pgfnodeparttwelvebox=\box77
+\pgfnodepartelevenbox=\box78
+\pgfnodeparttenbox=\box79
+\pgfnodepartninebox=\box80
+\pgfnodeparteightbox=\box81
+\pgfnodepartsevenbox=\box82
+\pgfnodepartsixbox=\box83
+\pgfnodepartfivebox=\box84
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+code.tex
+File: pgflibraryarrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\arrowsize=\dimen272
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryspy.code.tex
+File: tikzlibraryspy.code.tex 2019/04/04 v3.1.2 (3.1.2)
+\tikz@lib@spybox=\box85
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/04/04 v3.1.2 (3.1.2)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarysnakes.code.tex
+File: tikzlibrarysnakes.code.tex 2019/04/04 v3.1.2 (3.1.2)
+
+
+Package pgf Warning: Snakes have been superseded by decorations. Please use the
+ decoration libraries instead of the snakes library on input line 14.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathmorphing.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
+s.code.tex
+\pgfdecoratedcompleteddistance=\dimen273
+\pgfdecoratedremainingdistance=\dimen274
+\pgfdecoratedinputsegmentcompleteddistance=\dimen275
+\pgfdecoratedinputsegmentremainingdistance=\dimen276
+\pgf@decorate@distancetomove=\dimen277
+\pgf@decorate@repeatstate=\count172
+\pgfdecorationsegmentamplitude=\dimen278
+\pgfdecorationsegmentlength=\dimen279
+)
+\tikz@lib@dec@box=\box86
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathmorphing.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.pathreplacing.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.pathreplacing.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarydecorations.shapes.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
+brarydecorations.shapes.code.tex)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks49
+\verbatim@line=\toks50
+\verbatim@in@stream=\read2
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tabulary/tabulary.sty
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen280
+\ar@mcellbox=\box87
+\extrarowheight=\dimen281
+\NC@list=\toks51
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box88
+)
+\TY@count=\count173
+\TY@linewidth=\dimen282
+\tymin=\dimen283
+\tymax=\dimen284
+\TY@tablewidth=\dimen285
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthememiniframes
 .sty)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.
+sty)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.st
 y)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
@@ -759,20 +983,20 @@ LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `hyperledyer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -782,14 +1006,14 @@ LaTeX Font Info:    ... okay on input line 53.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
+* h-part:(L,W,R)=(10.95003pt, 342.2953pt, 10.95003pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=307.28987pt
+* \textwidth=342.2953pt
 * \textheight=244.6939pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* \oddsidemargin=-61.31996pt
+* \evensidemargin=-61.31996pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -810,17 +1034,17 @@ LaTeX Font Info:    ... okay on input line 53.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count163
-\scratchdimen=\dimen261
-\scratchbox=\box60
-\nofMPsegments=\count164
-\nofMParguments=\count165
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count166
-\MPscratchDim=\dimen262
-\MPnumerator=\count167
-\makeMPintoPDFobject=\count168
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count174
+\scratchdimen=\dimen286
+\scratchbox=\box89
+\nofMPsegments=\count175
+\nofMParguments=\count176
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count177
+\MPscratchDim=\dimen287
+\MPnumerator=\count178
+\makeMPintoPDFobject=\count179
+\everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -839,8 +1063,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 53.
+\AtBeginShipoutBox=\box90
+Package hyperref Info: Link coloring OFF on input line 59.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -848,68 +1072,68 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count169
+\c@section@level=\count180
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
-LaTeX Info: Redefining \nameref on input line 53.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./hyperledyer.out) (./hyperledyer.out)
 \@outlinefile=\write5
 \openout5 = `hyperledyer.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 53.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 53.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 53.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 53.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 53.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 53.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 59.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 53.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 53.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 53.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 53.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 53.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 53.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 53.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 59.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 59.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
-3.
+9.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-53.
+59.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 53.
+ut line 59.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -935,16 +1159,22 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
-Package ragged2e Info: ABD: executing \RaggedRight on input line 53.
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 59.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 53.
+LaTeX Info: Redefining \selectfont on input line 59.
 
-(./hyperledyer.nav) [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updma
-p/pdftex.map}
+(./hyperledyer.nav)
+<iimas.png, id=66, 401.5pt x 401.5pt>
+File: iimas.png Graphic file (type png)
+<use iimas.png>
+Package pdftex.def Info: iimas.png  used on input line 67.
+(pdftex.def)             Requested size: 68.45801pt x 68.45625pt.
+ [1
 
-] (./hyperledyer.toc
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iimas
+.png>] (./hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [2
@@ -960,8 +1190,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [6
 
-]
-(./hyperledyer.toc
+] (./hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [7
@@ -973,18 +1202,18 @@ LaTeX Info: Redefining \% on input line 1.
 ] [10
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 106.
+LaTeX Font Info:    Try loading font information for U+msa on input line 119.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 106.
+LaTeX Font Info:    Try loading font information for U+msb on input line 119.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 106.
+line 119.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1040,121 +1269,254 @@ LaTeX Info: Redefining \% on input line 1.
 ] [28
 
 ]
-<git.png, id=1806, 220.825pt x 92.345pt>
+<git.png, id=395, 220.825pt x 92.345pt>
 File: git.png Graphic file (type png)
 <use git.png>
-Package pdftex.def Info: git.png  used on input line 205.
+Package pdftex.def Info: git.png  used on input line 218.
 (pdftex.def)             Requested size: 66.248pt x 27.7037pt.
  [29
 
  <./git.png>]
-<curl.png, id=1867, 411.5375pt x 123.46124pt>
+<curl.png, id=407, 411.5375pt x 123.46124pt>
 File: curl.png Graphic file (type png)
 <use curl.png>
-Package pdftex.def Info: curl.png  used on input line 214.
+Package pdftex.def Info: curl.png  used on input line 227.
 (pdftex.def)             Requested size: 123.4622pt x 37.03865pt.
  [30
 
  <./curl.png>]
-<docker.jpeg, id=1926, 200.75pt x 200.75pt>
+<docker.jpeg, id=418, 200.75pt x 200.75pt>
 File: docker.jpeg Graphic file (type jpg)
 <use docker.jpeg>
-Package pdftex.def Info: docker.jpeg  used on input line 223.
+Package pdftex.def Info: docker.jpeg  used on input line 236.
 (pdftex.def)             Requested size: 60.22545pt x 60.22545pt.
  [31
 
  <./docker.jpeg>]
 File: docker.jpeg Graphic file (type jpg)
 <use docker.jpeg>
-Package pdftex.def Info: docker.jpeg  used on input line 232.
+Package pdftex.def Info: docker.jpeg  used on input line 245.
 (pdftex.def)             Requested size: 60.22545pt x 60.22545pt.
  [32
 
 ]
-<go.png, id=2043, 225.84375pt x 225.84375pt>
+<go.png, id=438, 225.84375pt x 225.84375pt>
 File: go.png Graphic file (type png)
 <use go.png>
-Package pdftex.def Info: go.png  used on input line 241.
+Package pdftex.def Info: go.png  used on input line 254.
 (pdftex.def)             Requested size: 67.75363pt x 67.75363pt.
  [33
 
  <./go.png>]
-Overfull \hbox (1.43367pt too wide) in paragraph at lines 250--250
-[]\OT1/cmss/bx/n/10.95 Node.js \OT1/cmss/m/n/10.95 es un en-torno de eje-cu-ci^
-^Son de Ja-vaS-cript, de c^^Sodi-go abier- 
- []
-
-<nodejs.png, id=2103, 288.07625pt x 175.65625pt>
+<nodejs.png, id=449, 288.07625pt x 175.65625pt>
 File: nodejs.png Graphic file (type png)
 <use nodejs.png>
-Package pdftex.def Info: nodejs.png  used on input line 250.
+Package pdftex.def Info: nodejs.png  used on input line 263.
 (pdftex.def)             Requested size: 86.42354pt x 52.69727pt.
-[34
+ [34
 
  <./nodejs.png>]
-<npm.png, id=2163, 225.84375pt x 225.84375pt>
+<npm.png, id=460, 225.84375pt x 225.84375pt>
 File: npm.png Graphic file (type png)
 <use npm.png>
-Package pdftex.def Info: npm.png  used on input line 259.
+Package pdftex.def Info: npm.png  used on input line 272.
 (pdftex.def)             Requested size: 67.75363pt x 67.75363pt.
  [35
 
  <./npm.png>]
-<python.png, id=2222, 582.175pt x 164.615pt>
+<python.png, id=471, 582.175pt x 164.615pt>
 File: python.png Graphic file (type png)
 <use python.png>
-Package pdftex.def Info: python.png  used on input line 268.
+Package pdftex.def Info: python.png  used on input line 281.
 (pdftex.def)             Requested size: 174.65384pt x 49.38487pt.
  [36
 
  <./python.png>] (./hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-[37
+) [37
 
 ] [38
 
 ]
-<install_01.png, id=2407, 336.25626pt x 30.1125pt>
+Overfull \hbox (0.47044pt too wide) in paragraph at lines 300--300
+[]\OT1/cmss/m/n/10.95 Para la ins-ta-la-ci^^Son sim-ple-men-te hay que des-car-
+gar los bi-na-rios y las im^^Sage- 
+ []
+
+<install_01.png, id=512, 336.25626pt x 30.1125pt>
 File: install_01.png Graphic file (type png)
 <use install_01.png>
-Package pdftex.def Info: install_01.png  used on input line 287.
+Package pdftex.def Info: install_01.png  used on input line 300.
 (pdftex.def)             Requested size: 235.37776pt x 21.07858pt.
- [39
+[39
 
  <./install_01.png>]
-<install_02.png, id=2465, 174.6525pt x 171.64125pt>
+<install_02.png, id=522, 174.6525pt x 171.64125pt>
 File: install_02.png Graphic file (type png)
 <use install_02.png>
-Package pdftex.def Info: install_02.png  used on input line 295.
+Package pdftex.def Info: install_02.png  used on input line 309.
 (pdftex.def)             Requested size: 87.32603pt x 85.8204pt.
  [40
 
  <./install_02.png>]
-<install_03.png, id=2524, 498.86375pt x 28.105pt>
+<install_03.png, id=532, 498.86375pt x 28.105pt>
 File: install_03.png Graphic file (type png)
 <use install_03.png>
-Package pdftex.def Info: install_03.png  used on input line 307.
+Package pdftex.def Info: install_03.png  used on input line 321.
 (pdftex.def)             Requested size: 249.43126pt x 14.05246pt.
  [41
 
- <./install_03.png>] (./hyperledyer.toc
+ <./install_03.png>]
+(./hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [42
 
 ] [43
 
-] [44
+] (./hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [44
+
+]
+<start_01.png, id=589, 718.685pt x 337.26pt>
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 341.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [45
+
+ <./start_01.png>]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 350.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+
+[46
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 359.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [47
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 368.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [48
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 377.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [49
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 386.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [50
+
+]
+<start_02.png, id=641, 406.51875pt x 249.93375pt>
+File: start_02.png Graphic file (type png)
+<use start_02.png>
+Package pdftex.def Info: start_02.png  used on input line 396.
+(pdftex.def)             Requested size: 203.25887pt x 124.96657pt.
+ [51
+
+ <./start_02.png>]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 405.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [52
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 414.
+(pdftex.def)             Requested size: 287.4689pt x 134.9016pt.
+ [53
 
 ] (./hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [45
+)
+[54
+
+] [55
+
+] [56
 
 ]
-(./hyperledyer.bbl) [46
+<start_05.png, id=710, 761.84625pt x 491.8375pt>
+File: start_05.png Graphic file (type png)
+<use start_05.png>
+Package pdftex.def Info: start_05.png  used on input line 437.
+(pdftex.def)             Requested size: 304.7331pt x 196.7315pt.
+ [57
+
+ <./start_05.png>] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+]
+[65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
+]
+Overfull \hbox (1.29219pt too wide) in paragraph at lines 643--643
+[]\OT1/cmss/m/n/10.95 Para \OT1/cmss/bx/n/10.95 ter-mi-nar \OT1/cmss/m/n/10.95 
+un pro-yec-to se de-be \OT1/cmss/bx/n/10.95 dar de ba-ja la red\OT1/cmss/m/n/10
+.95 . El co-man-do \OT1/cmss/bx/n/10.95 down 
+ []
+
+[73
+
+] (./hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [74
+
+] [75
+
+] (./hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [76
+
+] (./hyperledyer.bbl) [77
 
 ]
 \tf@nav=\write6
@@ -1166,36 +1528,37 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `hyperledyer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 333.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 333.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 677.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 677.
  (./hyperledyer.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 333.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 333.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 677.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 677.
 Package rerunfilecheck Info: File `hyperledyer.out' has not changed.
-(rerunfilecheck)             Checksum: D2EE7FF880F0BBEFC3190C835BFD670A;639.
+(rerunfilecheck)             Checksum: 8092AC6F6CF390F6F13D48F56A4A21CE;820.
  ) 
 Here is how much of TeX's memory you used:
- 18908 strings out of 492616
- 356655 string characters out of 6129482
- 488650 words of memory out of 5000000
- 22261 multiletter control sequences out of 15000+600000
- 15620 words of font info for 57 fonts, out of 8000000 for 9000
+ 25222 strings out of 492616
+ 523637 string characters out of 6129482
+ 624791 words of memory out of 5000000
+ 28355 multiletter control sequences out of 15000+600000
+ 15788 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,58p,778b,880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,80p,778b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on hyperledyer.pdf (46 pages, 311113 bytes).
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on hyperledyer.pdf (77 pages, 1177790 bytes).
 PDF statistics:
- 2935 PDF objects out of 2984 (max. 8388607)
- 2776 compressed objects within 28 object streams
- 105 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 978 PDF objects out of 1000 (max. 8388607)
+ 848 compressed objects within 9 object streams
+ 170 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 
