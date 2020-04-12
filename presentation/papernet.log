@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 APR 2020 16:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 APR 2020 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,7 +1165,7 @@ Package ragged2e Info: ABD: executing \RaggedRight on input line 59.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 59.
  (./papernet.nav)
-<iimas.png, id=30, 401.5pt x 401.5pt>
+<iimas.png, id=46, 401.5pt x 401.5pt>
 File: iimas.png Graphic file (type png)
 <use iimas.png>
 Package pdftex.def Info: iimas.png  used on input line 67.
@@ -1179,7 +1179,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [2
 
 ]
-<papernet_01.png, id=58, 558.085pt x 140.525pt>
+<papernet_01.png, id=82, 558.085pt x 140.525pt>
 File: papernet_01.png Graphic file (type png)
 <use papernet_01.png>
 Package pdftex.def Info: papernet_01.png  used on input line 78.
@@ -1222,22 +1222,120 @@ LaTeX Info: Redefining \% on input line 1.
 ] [9
 
 ]
-<papernet_02.png, id=123, 541.02126pt x 194.7275pt>
+<papernet_02.png, id=156, 541.02126pt x 194.7275pt>
 File: papernet_02.png Graphic file (type png)
 <use papernet_02.png>
 Package pdftex.def Info: papernet_02.png  used on input line 153.
 (pdftex.def)             Requested size: 216.40466pt x 77.8896pt.
  [10
 
- <./papernet_02.png>] [11
+ <./papernet_02.png>]
+Overfull \hbox (4.05399pt too wide) in paragraph at lines 165--165
+[]\OT1/cmss/bx/n/10.95 Variables de en-torno: \OT1/cmss/m/n/10.95 En cd commerc
+ial-paper/organization/magnetocorp 
+ []
+
+[11
 
 ]
-(./papernet.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [12
+Overfull \hbox (3.61899pt too wide) in paragraph at lines 177--177
+[]\OT1/cmss/bx/n/10.95 Empaquetar chain-co-de: \OT1/cmss/m/n/10.95 El smart con
+-tract se pue-de em-pa-car en un chain- 
+ []
+
+[12
 
 ] [13
+
+] [14
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [15
+
+] [16
+
+] [17
+
+]
+Overfull \hbox (3.61899pt too wide) in paragraph at lines 236--236
+[]\OT1/cmss/bx/n/10.95 Empaquetar chain-co-de: \OT1/cmss/m/n/10.95 El smart con
+-tract se pue-de em-pa-car en un chain- 
+ []
+
+[18
+
+] [19
+
+] [20
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [21
+
+] [22
+
+] [23
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [24
+
+]
+<papernet_03.png, id=305, 689.57625pt x 279.0425pt>
+File: papernet_03.png Graphic file (type png)
+<use papernet_03.png>
+Package pdftex.def Info: papernet_03.png  used on input line 294.
+(pdftex.def)             Requested size: 275.8256pt x 111.615pt.
+ [25
+
+ <./papernet_03.png>] [26
+
+] [27
+
+] [28
+
+] [29
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [30
+
+] [31
+
+] [32
+
+] [33
+
+]
+[34
+
+] [35
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [36
+
+] [37
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [38
+
+] [39
+
+] (./papernet.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [40
+
+] [41
 
 ]
 \tf@nav=\write6
@@ -1249,35 +1347,43 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `papernet.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
  (./papernet.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
-Package rerunfilecheck Info: File `papernet.out' has not changed.
-(rerunfilecheck)             Checksum: 0AB698F830EBB18ABBEB4FE20EB5875E;212.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
+
+
+Package rerunfilecheck Warning: File `papernet.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `papernet.out':
+(rerunfilecheck)             Before: B4EC3EF24A0C03F4D29A36689EEA743A;603
+(rerunfilecheck)             After:  315266E5FE0F60BA459C8335F2D2977F;762.
  ) 
 Here is how much of TeX's memory you used:
- 24756 strings out of 492616
- 517123 string characters out of 6129482
+ 24896 strings out of 492616
+ 518531 string characters out of 6129482
  621653 words of memory out of 5000000
- 28065 multiletter control sequences out of 15000+600000
- 12371 words of font info for 46 fonts, out of 8000000 for 9000
+ 28129 multiletter control sequences out of 15000+600000
+ 12665 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,80p,775b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on papernet.pdf (13 pages, 492747 bytes).
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on papernet.pdf (41 pages, 623829 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 458 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
