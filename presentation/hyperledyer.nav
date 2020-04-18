@@ -170,21 +170,23 @@
 \headcommand {\beamer@framepages {72}{72}}
 \headcommand {\slideentry {4}{2}{20}{73/73}{Ejecuci\IeC {\'o}n}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\beamer@subsectionpages {54}{73}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{74}{Logspout}}
-\headcommand {\slideentry {4}{3}{1}{74/74}{Logspout}{0}}
+\headcommand {\slideentry {4}{2}{21}{74/74}{Ejecuci\IeC {\'o}n}{0}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\slideentry {4}{3}{2}{75/75}{Logspout}{0}}
+\headcommand {\beamer@subsectionpages {54}{74}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{75}{Logspout}}
+\headcommand {\slideentry {4}{3}{1}{75/75}{Logspout}{0}}
 \headcommand {\beamer@framepages {75}{75}}
-\headcommand {\beamer@sectionpages {42}{75}}
-\headcommand {\beamer@subsectionpages {74}{75}}
-\headcommand {\sectionentry {5}{Referencias}{76}{Referencias}{0}}
-\headcommand {\slideentry {5}{0}{1}{76/76}{}{0}}
+\headcommand {\slideentry {4}{3}{2}{76/76}{Logspout}{0}}
 \headcommand {\beamer@framepages {76}{76}}
-\headcommand {\slideentry {5}{0}{2}{77/77}{}{0}}
+\headcommand {\beamer@sectionpages {42}{76}}
+\headcommand {\beamer@subsectionpages {75}{76}}
+\headcommand {\sectionentry {5}{Referencias}{77}{Referencias}{0}}
+\headcommand {\slideentry {5}{0}{1}{77/77}{}{0}}
 \headcommand {\beamer@framepages {77}{77}}
-\headcommand {\beamer@partpages {1}{77}}
-\headcommand {\beamer@subsectionpages {76}{77}}
-\headcommand {\beamer@sectionpages {76}{77}}
-\headcommand {\beamer@documentpages {77}}
-\headcommand {\gdef \inserttotalframenumber {77}}
+\headcommand {\slideentry {5}{0}{2}{78/78}{}{0}}
+\headcommand {\beamer@framepages {78}{78}}
+\headcommand {\beamer@partpages {1}{78}}
+\headcommand {\beamer@subsectionpages {77}{78}}
+\headcommand {\beamer@sectionpages {77}{78}}
+\headcommand {\beamer@documentpages {78}}
+\headcommand {\gdef \inserttotalframenumber {78}}

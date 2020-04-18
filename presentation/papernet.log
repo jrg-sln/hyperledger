@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  11 APR 2020 12:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  17 APR 2020 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1165,7 +1165,7 @@ Package ragged2e Info: ABD: executing \RaggedRight on input line 59.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 59.
  (./papernet.nav)
-<iimas.png, id=46, 401.5pt x 401.5pt>
+<iimas.png, id=54, 401.5pt x 401.5pt>
 File: iimas.png Graphic file (type png)
 <use iimas.png>
 Package pdftex.def Info: iimas.png  used on input line 67.
@@ -1179,7 +1179,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [2
 
 ]
-<papernet_01.png, id=82, 558.085pt x 140.525pt>
+<papernet_01.png, id=94, 558.085pt x 140.525pt>
 File: papernet_01.png Graphic file (type png)
 <use papernet_01.png>
 Package pdftex.def Info: papernet_01.png  used on input line 78.
@@ -1222,7 +1222,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [9
 
 ]
-<papernet_02.png, id=156, 541.02126pt x 194.7275pt>
+<papernet_02.png, id=172, 541.02126pt x 194.7275pt>
 File: papernet_02.png Graphic file (type png)
 <use papernet_02.png>
 Package pdftex.def Info: papernet_02.png  used on input line 153.
@@ -1285,7 +1285,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [24
 
 ]
-<papernet_03.png, id=305, 689.57625pt x 279.0425pt>
+<papernet_03.png, id=327, 689.57625pt x 279.0425pt>
 File: papernet_03.png Graphic file (type png)
 <use papernet_03.png>
 Package pdftex.def Info: papernet_03.png  used on input line 294.
@@ -1355,21 +1355,14 @@ LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
-
-
-Package rerunfilecheck Warning: File `papernet.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `papernet.out':
-(rerunfilecheck)             Before: B4EC3EF24A0C03F4D29A36689EEA743A;603
-(rerunfilecheck)             After:  315266E5FE0F60BA459C8335F2D2977F;762.
+Package rerunfilecheck Info: File `papernet.out' has not changed.
+(rerunfilecheck)             Checksum: 315266E5FE0F60BA459C8335F2D2977F;762.
  ) 
 Here is how much of TeX's memory you used:
- 24896 strings out of 492616
- 518531 string characters out of 6129482
- 621653 words of memory out of 5000000
- 28129 multiletter control sequences out of 15000+600000
+ 24912 strings out of 492616
+ 518687 string characters out of 6129482
+ 622653 words of memory out of 5000000
+ 28145 multiletter control sequences out of 15000+600000
  12665 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,80p,775b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1380,10 +1373,10 @@ usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></u
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on papernet.pdf (41 pages, 623829 bytes).
+Output written on papernet.pdf (41 pages, 625132 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
+ 554 PDF objects out of 1000 (max. 8388607)
+ 484 compressed objects within 5 object streams
  93 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

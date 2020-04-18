@@ -10,5 +10,5 @@
 \beamer@sectionintoc {4}{Hyperledger en acci\IeC {\'o}n}{42}{0}{4}
 \beamer@subsectionintoc {4}{1}{Contexto}{44}{0}{4}
 \beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{54}{0}{4}
-\beamer@subsectionintoc {4}{3}{Logspout}{74}{0}{4}
-\beamer@sectionintoc {5}{Referencias}{76}{0}{5}
+\beamer@subsectionintoc {4}{3}{Logspout}{75}{0}{4}
+\beamer@sectionintoc {5}{Referencias}{77}{0}{5}

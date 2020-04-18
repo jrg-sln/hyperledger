@@ -499,19 +499,19 @@
 		\frametitle{Consorcio}
 		\textbf{test-network} tiene  un consorcio (grupo de organizaciones)  con dos miembros Org1 y Org2, además de una organización que mantiene el orden de servicio (ordering service) en la red.\\
 		\vspace{4mm}
-		Los \textbf{peers nodes} son los componentes fundamentales en cualquier red Fabric. Ellos son los encargados de \textbf{almacenar} en el ledger de la \textbf{blockchain} y validar las transacciones antes de que se suban al ledger. Además, ellos \textbf{ejecutan los smart contracts} que son los que contienen la lógica del negocio.
+		Los \textbf{peers nodes} son los componentes fundamentales en cualquier red Fabric. Ellos son los encargados de \textbf{almacenar} en el ledger de la \textbf{blockchain} y validar las transacciones antes de que se suban al ledger. Además, ellos \textbf{ejecutan los smart contracts} los cuales contienen la lógica del negocio.
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Ordering service}
-		Todas las redes Fabric deben incluir un nodo \textbf{ordering service}. Este nodo es el que decide el orden de las transacciones y las transacciones que se incluyen en un bloque.\\
+		Todas las redes Fabric deben incluir un nodo \textbf{ordering service}. Este nodo es el que decide el orden y las transacciones que se incluyen en un bloque.\\
 		\vspace{4mm}
-		Los \textbf{ordering nodes} hace uso de la configuración de la red (define las capacidades de la red) y los parámetros de configuración del canal. Por defecto, \textbf{ordering nodes} utilizan el algoritmo de consenso \textbf{Raft}.
+		Los \textbf{ordering nodes} hace uso de la configuración de la red (define las capacidades de la red) y los parámetros de configuración del canal. Por defecto, los \textbf{ordering nodes} utilizan el algoritmo de consenso \textbf{Raft (\url{https://raft.github.io})}.
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Canales}
-		Actualmente, la red que está se está ejecutando cuenta con 2 peer nodes uno por cada organización (Org1 y Org2) y un ordering node. Ahora vamos a crear un \textbf{canal para las transacciones} entre el consorcio.\\
+		La red que se está ejecutando cuenta con 2 peer nodes, uno por cada organización (Org1 y Org2), y un ordering node. Ahora vamos a crear un \textbf{canal para las transacciones} entre el consorcio.\\
 		\vspace{4mm}
 		Recordemos que los canales son \textbf{enlaces privados de comunicación} entre miembros específicos de la red y cada canal tiene su propio ledger de la blockchain.
 	\end{frame}
@@ -523,7 +523,7 @@
 			\setlength{\fboxrule}{1mm}
 			\setlength{\fboxsep}{3mm}
 			\framebox[9cm][c]{
-				\textbf{./network.sh createChannel [-c channel1]}
+				\textbf{./network.sh createChannel}
 			}
 		\end{center}
 	\end{frame}
@@ -545,14 +545,17 @@
 				\textbf{./network.sh deployCC}
 			}
 		\end{center}
-		\textbf{deployCC} instala la chaincode de fabcar en peer0.org1.example.com y peer0.org2.example.com
+		\textbf{deployCC} instala el chaincode de \textbf{fabcar} en peer0.org1.example.com y en peer0.org2.example.com y luego lo despliega en el canal.
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Crear nodo}
-		Se puede usar un \textbf{peer node CLI} para \textbf{interactuar con la red} (invocar smart contracts, actualizar canales, instalar y desplegar smart contracts).\\
-		\vspace{4mm}
-		Los \textbf{binarios de peer} están en la carpeta bin de fabric-samples, la cual \textbf{ya está en el PATH}. También se requiere poner en el PATH la variable FABRIC\_CFG\_PATH:
+		\frametitle{Crear una aplicación cliente}
+		En este momento se puede usar una \textbf{aplicación CLI} para \textbf{interactuar con la red} (ejecutar smart contracts, actualizar canales, instalar y desplegar smart contracts).
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear una aplicación cliente}
+		Para crear a \textbf{CLI} se va a ocupar la aplicación peer que está en la carpeta \textbf{bin} de fabric-samples (ya en el PATH). También se requiere poner en el PATH la variable FABRIC\_CFG\_PATH para apuntar al archivo de configuración \textbf{core.yaml}:
 		\begin{center}
 			\setlength{\fboxrule}{1mm}
 			\setlength{\fboxsep}{3mm}
@@ -563,8 +566,8 @@
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Crear nodo}
-		Hay que establecer las \textbf{variables de entorno para Org1}, para que CLI pueda operar con ella:\\
+		\frametitle{Crear una aplicación cliente}
+		Después, se deben establecer las \textbf{variables de entorno} que permitiran operar a la aplicación CLI en la Org1:\\
 		\begin{table}[h]
 			\centering
 			\resizebox{1\textwidth}{!} {
@@ -585,19 +588,22 @@
 
 	\begin{frame}
 		\frametitle{Interactuar con la red}
-		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{Consultar todos los carros}\\
-		\begin{center}
-			\setlength{\fboxrule}{1mm}
-			\setlength{\fboxsep}{3mm}
-			\framebox[9cm][c]{
-				\textbf{\tiny{peer chaincode query -C mychannel -n fabcar -c '{``Args":[``queryAllCars"]}'}}
+		Ahora, el nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{consultar todos los carros.}\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					peer chaincode query -C mychannel -n fabcar -c '\{``Args":[``queryAllCars"]\}'\\
+					\hline
+				\end{tabular}
 			}
-		\end{center}
+		\end{table}
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Interactuar con la red}
-		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{Cambiar dueño de un auto}\\
+		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{cambiar el dueño de un auto.}\\
 		\begin{table}[h]
 			\centering
 			\resizebox{1\textwidth}{!} {
@@ -609,7 +615,7 @@
 					-C mychannel -n fabcar --peerAddresses localhost:7051 --tlsRootCertFiles\\
 					\${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt\\
 					--peerAddresses localhost:9051 --tlsRootCertFiles\\ \${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt\\
-					-c '{``function":``changeCarOwner",``Args":[``CAR9",``Dave"]}'\\
+					-c '\{``function":``changeCarOwner",``Args":[``CAR9",``Dave"]\}'\\
 					\hline
 				\end{tabular}
 			}
@@ -625,7 +631,7 @@
 	
 	\begin{frame}
 		\frametitle{Validar cambios}
-		Ahora, se pueden \textbf{validar los cambios} en el ledger de la blockchain. En esta ocasión se va a utilizar el nodo \textbf{peer de Org2}, para ello hay que exportar las variables de entorno de Org2:\\
+		Ahora, se pueden \textbf{validar los cambios} en el ledger de la blockchain. En esta ocasión se va a utilizar el nodo \textbf{CLI de Org2}, para ello hay que exportar las variables de entorno de Org2:\\
 		\begin{table}[h]
 			\centering
 			\resizebox{1\textwidth}{!} {
@@ -647,13 +653,16 @@
 	\begin{frame}
 		\frametitle{Validar cambios}
 		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{Consultar un carro}\\
-		\begin{center}
-			\setlength{\fboxrule}{1mm}
-			\setlength{\fboxsep}{3mm}
-			\framebox[9cm][c]{
-				\textbf{\tiny{peer chaincode query -C mychannel -n fabcar -c '{``Args":[``queryCar",``CAR9"]}'}}
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					peer chaincode query -C mychannel -n fabcar -c '\{``Args":[``queryAllCars"]\}'\\
+					\hline
+				\end{tabular}
 			}
-		\end{center}
+		\end{table}
 	\end{frame}
 
 	\begin{frame}
@@ -665,6 +674,9 @@
 			\framebox[9cm][c]{
 				\textbf{./network.sh down}
 			}
+		\end{center}
+		\begin{center}
+			\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/test\_network.html}}
 		\end{center}
 	\end{frame}
 	
