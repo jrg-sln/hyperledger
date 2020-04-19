@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+% pre\'ambulo
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage[margin=1in,left=0.7in,right=0.7in,top=1in]{geometry}
+\usepackage{mathtools}
+\usepackage{bussproofs}
+\usepackage{lscape}
+\usepackage{resizegather}
+\usepackage{verbatim}
+\usepackage[utf8]{inputenc}
+\usepackage{ amssymb }
+\usepackage{hyperref}
+\usepackage{titling}
+
+\title{Introducción a Hyperledger\\Tarea}
+\author{René Dávila - Jorge Solano}
+\date{ }
+
+\pretitle{%
+	\begin{center}
+		\LARGE
+		\includegraphics[width=4cm,height=4cm]{iimas}\\[\bigskipamount]
+	\end{center}
+\posttitle{
+
+\begin{document}
+	%\includegraphics [width =0.2 \textwidth ]{iimas}
+	\maketitle
+	
+	\begin{enumerate}
+		\item En Hyperledger Fabric siempre debe existir un servicio de ordenamiento para la administración de la red. Describe como funciona ordering service en Fabric (\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/orderer/ordering\_service.html}).
+		
+		\item Hyperledger, por defecto, utiliza el algoritmo Raft para llevar a cabo el consenso en la red Fabric. Describe el algoritmo de consenso Raft (\url{https://raft.github.io}).
+	\end{enumerate}
+
+\end{document}

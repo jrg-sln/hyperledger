@@ -58,7 +58,6 @@
 
 \begin{document}
 	\EnableBpAbbreviations
-	
 	\begin{frame}
 		\begin{center}
 			\includegraphics [width =0.2 \textwidth ]{iimas}
@@ -74,23 +73,17 @@
 			\includegraphics[scale=.5]{papernet_01}
 			\centering
 		\end{figure}
-		Las organizaciones MagnetoCorp y DigiBank intercambian papeles comerciales en la red PaperNet.
+		Las organizaciones MagnetoCorp y DigiBank intercambian \textbf{papeles comerciales} en la red \textbf{PaperNet}.
 	\end{frame}
 	
 	\subsection{PaperNet}
 
 	\begin{frame}
 		\frametitle{Peers y canal de comunicación}
-		En cd fabric-samples/test-network:\\
-		\begin{center}
-			\begin{tabulary}{\linewidth}{L}
-				\hline
-				(PaperNet admin)\$ ./network.sh up \\
-				\hline 
-				(PaperNet admin)\$ ./network.sh createChannel \\
-				\hline
-			\end{tabulary} 
-		\end{center}
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{papernet_02}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
@@ -110,14 +103,28 @@
 		peer0.org1.example.com $\rightarrow$ DigiBank\\
 		peer0.org2.example.com $\rightarrow$ MagnetoCorp
 	\end{frame}
-
+	
 	\begin{frame}
-		\frametitle{Monitor de la red}
-		En cd commercial-paper/organization/magnetocorp\\
+		\frametitle{Red docker net\_test}
+		Es importante validar que en la variable PATH se encuentre la carpeta \textbf{bin} de fabric-samples y que en la variable FABRIC\_CFG\_PATH se encuentre la carpeta \textbf{config}.
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(MagnetoCorp admin)\$ ./monitordocker.sh net\_test \\
+				(PaperNet admin)\$ export PATH=\${PWD}/../bin:\${PWD}:\$PATH\\
+				\hline
+				(PaperNet admin)\$ export FABRIC\_CFG\_PATH=\$PWD/../config/\\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Monitor de la red}
+		Tanto el administrador de la red, como los administradores de cada organización pueden revisar la bitácora de actividades de la red constantemente. Ahora jugaremos el rol de Administrador de MagnetoCorp para monitorear la red, cd commercial-paper/organization/magnetocorp ejecutar:\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				(MagnetoCorp admin)\$ ./configuration/cli/monitordocker.sh net\_test \\
 				\hline
 			\end{tabulary} 
 		\end{center}
@@ -126,7 +133,7 @@
 	\subsection{Crear smart contract propio (MagnetoCorp)}
 	
 	\begin{frame}
-		\frametitle{Código del smart contract}
+		\frametitle{Creación del contrato}
 		En cd commercial-paper/organization/magnetocorp\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
@@ -135,50 +142,57 @@
 				\hline
 			\end{tabulary} 
 		\end{center}
+		Para ver cómo fue diseñado papercontract.js más a detalle se puede consultar:  \small{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/developapps/smartcontract.html}}
 	\end{frame}
 
 	\begin{frame}
 		\frametitle{Ciclo de vida en Fabric}
 		\begin{figure}[h]
-			\includegraphics[scale=.4]{papernet_02}
+			\includegraphics[scale=.4]{papernet_04}
 			\centering
 		\end{figure}
 		\begin{itemize}
-			\item El desarrollador empaqueta el chaincode ([1...n] smart contract)
-			\item El administrador instalar el chaincode en cada organización.
-			\item El administrador de cada organización debe aprobar el chaincode.
-			\item El administrador publica en el chaincode en el ledger del canal asociado.
+			\item Organización emisora
+			\begin{itemize}
+				\item El desarrollador empaqueta el chaincode ([1...n] smart contract)
+				\item El administrador instalar el chaincode en cada organización.
+			\end{itemize}
+			\item Organización receptora
+			\begin{itemize}
+				\item El administrador debe aprobar el chaincode.
+				\item El administrador publica el chaincode en el ledger del canal asociado.
+			\end{itemize}
 		\end{itemize}
 		{\tiny \url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/chaincode\_lifecycle.html\#chaincode-lifecycle} }
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
+		\frametitle{Instalación}
 		\textbf{Variables de entorno:} En cd commercial-paper/organization/magnetocorp hay que establecer las variables de entorno para que el administrador pueda instalar y aprobar el chaincode en la organización MagnetoCorp.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(MagnetoCorp admin)\$ source magnetocorp.sh\\
+				(MagnetoCorp admin)\$ source magnetocorp.sh \\
 				\hline
 			\end{tabulary} 
 		\end{center}
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Empaquetar chaincode:} El smart contract se puede empacar en un chaincode utilizando el comando peer lifecycle chaincode package.\\
+		\frametitle{Instalación}
+		\textbf{Empaquetar el chaincode:} Para instalar el contrato, primero se debe empaquetar el smart contract en un chaincode.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(MagnetoCorp admin)\$ peer lifecycle chaincode package cp.tar.gz --lang node --path ./contract --label cp\_0\\
+				(MagnetoCorp admin)\$ peer lifecycle chaincode package cp.tar.gz - -lang node - -path ./contract - -label cp\_0\\
 				\hline
 			\end{tabulary} 
 		\end{center}
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Instalar chaincode:} El smart contract se puede instalar utilizando el comando peer lifecycle chaincode install.\\
+		\frametitle{Instalación}
+		\textbf{Instalar el chaincode:} Una vez generado el paquete se puede instalar en el peer node de la organización.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -189,30 +203,58 @@
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Aprobar chaincode:} MagnetoCorp debe aprobar el papercontract que se acaba de instalar con el package ID del contrato.\\
+		\frametitle{Aprobación}
+		\textbf{Package ID:} Para poder aprobar el contrato primero se debe obtener el packageID del chaincode que se acaba de instalar.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
 				(MagnetoCorp admin)\$ peer lifecycle chaincode queryinstalled \\
 				\hline
-				(MagnetoCorp admin)\$ export PACKAGE\_ID=cp\_0:ffda9... \\
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Aprobación}
+		\textbf{Guardar el package ID:} El package ID se va a ocupar en el siguiente paso, se puede guardar en una variable de entorno.\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(MagnetoCorp admin)\$ peer lifecycle chaincode approveformyorg --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com --channelID mychannel --name papercontract -v 0 --package-id \$PACKAGE\_ID --sequence 1 --tls --cafile \$ORDERER\_CA \\
+				(MagnetoCorp admin)\$ export PACKAGE\_ID=cp\_0:ffda9... \\
 				\hline
 			\end{tabulary} 
 		\end{center}
 	\end{frame}
 	
-	\subsection{Aprobar smart contract ajeno (DigiBank)}
+	\begin{frame}
+		\frametitle{Aprobación}
+		\textbf{Aprobar el chaincode:} El administrador de MagnetoCorp debe aprobar el papercontract.\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				(MagnetoCorp admin)\$ peer lifecycle chaincode approveformyorg - -orderer localhost:7050 - -ordererTLSHostnameOverride orderer.example.com - -channelID mychannel - -name papercontract -v 0 - -package-id \$PACKAGE\_ID - -sequence 1 - -tls - -cafile \$ORDERER\_CA \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Aprobación}
+		La política de aprobación define el número de organizaciones que debe endosar (ejecutar y firmar) una transacción antes de determinarse como válida.\\
+		\vspace{4mm}
+		El contrato se aprobó por MagnetoCorp con la política por defecto de la red, la cual requiere que la mayoría de las organizaciones validen la transacción. Todas las transacciones, válidas o inválidas, se guardan en la blockchain, pero solo las válidas modifican el estado (\textbf{world state}).\\
+		\centering{\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/ledger/ledger.html}}}
+	\end{frame}
+	
+	\subsection{Aprobar smart contract de terceros (DigiBank)}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
+		\frametitle{Instalación}
 		Por defecto, el ciclo de vida del chaincode en Fabric requiere que la mayoría de las organizaciones apruebe la definición de un chaincode en el canal. En este caso, se tienen 2 organizaciones, por lo tanto, se requiere que las 2 organizaciones apruebe el chaincode.
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
+		\frametitle{Instalación}
 		\textbf{Variables de entorno:} En cd commercial-paper/organization/digibank/ hay que establecer las variables de entorno para que el administrador de DigiBank pueda instalar y aprobar el papernet chaincode.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
@@ -224,20 +266,20 @@
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Empaquetar chaincode:} El smart contract se puede empacar en un chaincode utilizando el comando peer lifecycle chaincode package.\\
+		\frametitle{Instalación}
+		\textbf{Empaquetar el chaincode:} El smart contract se debe empacar en un chaincode.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(DigiBank admin)\$ peer lifecycle chaincode package cp.tar.gz --lang node --path ./contract --label cp\_0\\
+				(DigiBank admin)\$ peer lifecycle chaincode package cp.tar.gz - -lang node - -path ./contract - -label cp\_0\\
 				\hline
 			\end{tabulary} 
 		\end{center}
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Instalar chaincode:} El smart contract se puede instalar utilizando el comando peer lifecycle chaincode install.\\
+		\frametitle{Instalación}
+		\textbf{Instalar el chaincode:} Ahora se puede instalar el chaincode empaquetado en la organización.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -248,16 +290,36 @@
 	\end{frame}
 	
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Aprobar chaincode:} DigiBank debe aprobar el papercontract que se acaba de instalar con el package ID del contrato.\\
+		\frametitle{Aprobación}
+		\textbf{Package ID:} Para poder aprobar el contrato primero se debe obtener el packageID del chaincode que se acaba de instalar.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
 				(DigiBank admin)\$ peer lifecycle chaincode queryinstalled \\
 				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Aprobación}
+		\textbf{Guardar el package ID:} El package ID se va a ocupar en el siguiente paso, se puede guardar en una variable de entorno.\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
 				(DigiBank admin)\$ export PACKAGE\_ID=cp\_0:ffda9... \\
 				\hline
-				(DigiBank admin)\$ peer lifecycle chaincode approveformyorg --orderer localhost:7050 --ordererTLSHostnameOverride orderer.example.com --channelID mychannel --name papercontract -v 0 --package-id \$PACKAGE\_ID --sequence 1 --tls --cafile \$ORDERER\_CA \\
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Aprobación}
+		\textbf{Aprobar el chaincode:} El administrador de DigiBank debe aprobar el papercontract.\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				(DigiBank admin)\$ peer lifecycle chaincode approveformyorg --orderer localhost:7050 - -ordererTLSHostnameOverride orderer.example.com - -channelID mychannel - -name papercontract -v 0 - -package-id \$PACKAGE\_ID - -sequence 1 - -tls - -cafile \$ORDERER\_CA \\
 				\hline
 			\end{tabulary} 
 		\end{center}
@@ -267,28 +329,30 @@
 	
 	\begin{frame}
 		\frametitle{Publicación}
-		Una vez que el contrato ha sido aprobado por la mayoría del consorcio (2/2) en el canal, se crea un nuevo contenedor docker para ejecutar el papercontract en los nodos de la red y así, éste pueda ser invocado por las aplicaciones cliente en el canal.
+		Una vez que el contrato ha sido aprobado por la mayoría del consorcio (2/2) en el canal, se envía la definición del chaincode al canal.\\
+		\vspace{4mm}
+		Ahora, el contrato inteligente CommercialPaper puede ser invocado por alguna aplicación cliente en el canal.
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Instalación y aprobación}
-		\textbf{Publicar papercontract:} Ya aprobado, el administrador de cualquier organización puede publicar el smart contract utilizando el comando peer lifecycle chaincode commit.\\
+		\frametitle{Publicación}
+		\textbf{Publicar papercontract:} El administrador de cualquier organización puede publicar el smart contract en el canal.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(DigiBank admin)\$ peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --peerAddresses localhost:7051 --tlsRootCertFiles \${PEER0\_ORG1\_CA} --peerAddresses localhost:9051 --tlsRootCertFiles \${PEER0\_ORG2\_CA} --channelID mychannel --name papercontract -v 0 --sequence 1 --tls --cafile \$ORDERER\_CA --waitForEvent\\
+				(DigiBank admin)\$ peer lifecycle chaincode commit -o localhost:7050 - -ordererTLSHostnameOverride orderer.example.com - -peerAddresses localhost:7051 - -tlsRootCertFiles \${PEER0\_ORG1\_CA} - -peerAddresses localhost:9051 - -tlsRootCertFiles \${PEER0\_ORG2\_CA} - -channelID mychannel - -name papercontract -v 0 - -sequence 1 - -tls - -cafile \$ORDERER\_CA - -waitForEvent\\
 				\hline
 			\end{tabulary} 
 		\end{center}
 	\end{frame}
 	
-	\subsection{Emitir un papel comercial (MagnetoCorp)}
+	\subsection{Emisión de papel comercial (MagnetoCorp)}
 	
 	\begin{frame}
-		\frametitle{Diagrama para la emisión}
-		Para emitir el papel comercial MagnetoCorp utiliza su aplicación cliente llamada issue.js.
+		\frametitle{Diagrama de emisión}
+		MagnetoCorp utiliza su aplicación cliente \textbf{issue.js} y emitir el papel comercial .
 		\begin{figure}[h]
-			\includegraphics[scale=.4]{papernet_03}
+			\includegraphics[scale=.4]{papernet_05}
 			\centering
 		\end{figure}
 	\end{frame}
@@ -297,16 +361,30 @@
 		\frametitle{Emisión}
 		En cd commercial-paper/organization/magnetocorp/application/ se pueden ver los archivos \textbf{addToWallet.js}, \textbf{issue.js} y \textbf{package.json}.\\
 		\vspace{4mm}
-		Isabella va a utilizar addToWallet.js para agregar su identidad al wallet (Certificado X.509). issue.js utilizará esa identidad para crear el papel comercial a nombre de MagnetoCorp invocando al papercontract.
+		Isabella va a utilizar addToWallet.js para agregar su identidad al wallet (Certificado X.509) y luego issue.js utilizará esa identidad para crear el papel comercial a nombre de MagnetoCorp invocando al papercontract.
 	\end{frame}
 	
 	\begin{frame}
 		\frametitle{Emisión}
-		Como se puede observar al inicio del archivo \textbf{issue.js} se requieren ciertas dependencias las cuales están declaras en el archivo \textbf{package.json} y se pueden descargar con npm.\\
+		La aplicación cliente \textbf{issue.js} está escrita en javascript y se ejecutará en node.js. Los paquetes \textbf{js-yaml} y \textbf{fabric-network} se deben descargar de npm.\\
+		\vspace{4mm}
+		Los paquetes y las versiones necesarias están declaradas en el archivo \textbf{package.json}.
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(Isabella)\$ npm install \\
+				(MagnetoCorp Isabella)\$ npm install \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Emisión}
+		Por convención, los paquetes descargados por \textbf{npm} se guardan en la carpeta \textbf{/node\_modules}, donde se ejecutó el comando.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				(MagnetoCorp Isabella)\$ ls \\
 				\hline
 			\end{tabulary} 
 		\end{center}
@@ -314,13 +392,13 @@
 	
 	\begin{frame}
 		\frametitle{Emisión}
-		Ahora, Isabella debe agregar su credenciales X.509 a su wallet.\\
+		Para que Isabella pueda ejecutar emitir el papel comercial \textbf{00001}, se deben agregar su credenciales X.509 a su wallet.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
-				(Isabella)\$ node addToWallet.js \\
+				(MagnetoCorp Isabella)\$ node addToWallet.js \\
 				\hline
-				(Isabella)\$ ls ../identity/user/isabella/wallet/ \\
+				(MagnetoCorp Isabella)\$ ls ../identity/user/isabella/wallet/ \\
 				\hline
 			\end{tabulary} 
 		\end{center}
@@ -328,7 +406,7 @@
 	
 	\begin{frame}
 		\frametitle{Emisión}
-		Ahora sí, Isabella puede utilizar \textbf{issue.js} para enviar la transacción que emitirá el papel comercial 00001 de parte de MagnetoCorp.\\
+		Ahora sí, Isabella puede utilizar \textbf{issue.js} para enviar la transacción que emitirá el papel comercial \textbf{00001} de parte de MagnetoCorp.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -366,7 +444,7 @@
 	
 	\begin{frame}
 		\frametitle{Compra}
-		Ahora, Balaji debe agregar sus identidad a su wallet ejecutando el programa \textbf{addToWallet.js}.\\
+		Para que Balaji pueda comprar el papel comercial, debe agregar sus identidad a su wallet ejecutando el programa \textbf{addToWallet.js}.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -378,7 +456,7 @@
 	
 	\begin{frame}
 		\frametitle{Compra}
-		Finalmente, Balaji puede usar \textbf{buy.js} para enviar la transacción para transferir el papel comercial de MagnetoCorp a DigiBank.\\
+		Finalmente, Balaji puede enviar la transacción \textbf{buy.js} para transferir (comprar) el papel comercial de MagnetoCorp a DigiBank.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -391,8 +469,8 @@
 	\subsection{Canjear el papel comercial (DigiBank)}
 	
 	\begin{frame}
-		\frametitle{Compra}
-		La transacción final para el papel comercial será que DigiBank lo intercambie con MagnetoCorp. Para ello Balaji utilizará el \textbf{redeem.js}.\\
+		\frametitle{Canjear}
+		La transacción final para el papel comercial \textbf{00001} será que DigiBank lo intercambie con MagnetoCorp. Para ello Balaji utilizará el \textbf{redeem.js}.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
 				\hline
@@ -405,7 +483,7 @@
 	\subsection{Limpiar el proyecto}
 	
 	\begin{frame}
-		\frametitle{Compra}
+		\frametitle{Limpiar}
 		En cd fabric-samples/commercial-paper.\\
 		\begin{center}
 			\begin{tabulary}{\linewidth}{L}
@@ -422,7 +500,7 @@
 	\begin{frame} [allowframebreaks]
 		\frametitle{Referencias}
 		\begin{itemize}
-			\item \url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/tutorial/commercial\_paper.html\#prerequisites}
+			\item \url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/tutorial/commercial\_paper.html}
 		\end{itemize}
 	\end{frame}
 \end{document}

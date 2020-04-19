@@ -1,11 +1,11 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Commercial paper}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{PaperNet}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Crear smart contract propio (MagnetoCorp)}{8}{0}{1}
-\beamer@subsectionintoc {1}{3}{Aprobar smart contract ajeno (DigiBank)}{15}{0}{1}
-\beamer@subsectionintoc {1}{4}{Publicar smart contract (DigiBank)}{21}{0}{1}
-\beamer@subsectionintoc {1}{5}{Emitir un papel comercial (MagnetoCorp)}{24}{0}{1}
-\beamer@subsectionintoc {1}{6}{Comprar un papel comercial (DigiBank)}{30}{0}{1}
-\beamer@subsectionintoc {1}{7}{Canjear el papel comercial (DigiBank)}{36}{0}{1}
-\beamer@subsectionintoc {1}{8}{Limpiar el proyecto}{38}{0}{1}
-\beamer@sectionintoc {2}{Referencias}{40}{0}{2}
+\beamer@subsectionintoc {1}{2}{Crear smart contract propio (MagnetoCorp)}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{Aprobar smart contract de terceros (DigiBank)}{19}{0}{1}
+\beamer@subsectionintoc {1}{4}{Publicar smart contract (DigiBank)}{27}{0}{1}
+\beamer@subsectionintoc {1}{5}{Emisi\IeC {\'o}n de papel comercial (MagnetoCorp)}{30}{0}{1}
+\beamer@subsectionintoc {1}{6}{Comprar un papel comercial (DigiBank)}{37}{0}{1}
+\beamer@subsectionintoc {1}{7}{Canjear el papel comercial (DigiBank)}{43}{0}{1}
+\beamer@subsectionintoc {1}{8}{Limpiar el proyecto}{45}{0}{1}
+\beamer@sectionintoc {2}{Referencias}{47}{0}{2}
