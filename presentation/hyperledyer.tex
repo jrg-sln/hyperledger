@@ -10,6 +10,7 @@
 \usetikzlibrary{shapes,arrows,spy,positioning,snakes}
 \usepackage{verbatim} % comentarios
 \usepackage{tabulary} % tablas
+\usepackage[export]{adjustbox}
 
 \DeclareOptionBeamer{compress}{\beamer@compresstrue}
 \ProcessOptionsBeamer
@@ -101,7 +102,7 @@
 	\end{frame}
 
 	\begin{frame}
-		Sin embargo, en muchos casos de \textbf{uso empresarial} la \textbf{identidad} de los participantes es un \textbf{requisito indispensable}, como por ejemplo en una transacción financiera, donde las regulaciones el Know Your Customer (KYC) y el Anti-Money Laundering (AML) deben seguirse de manera puntual.
+		En los casos de \textbf{uso empresarial} la \textbf{identidad} de los participantes es un \textbf{requisito indispensable}, como por ejemplo en una transacción financiera, donde las regulaciones el Know Your Customer (KYC) y el Anti-Money Laundering (AML) deben seguirse de manera puntual.
 		\begin{figure}[h]
 			\includegraphics[scale=.5]{kyc_logo}
 			\centering
@@ -118,6 +119,21 @@
 			\item Baja latencia en la confirmación de transacción.
 			\item Privacidad y confidencialidad de las transacciones y de la información de las transacciones.
 		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Smart Contracts}
+		Una red blockchain utiliza \textbf{Smart Contracts} para proporcionar acceso controlado al libro mayor.\\
+		\vspace{4mm}
+		No solo son un mecanismo clave para encapsular la información y mantenerla simple en toda la red, sino que también se pueden escribir para permitir a los participantes ejecutar ciertos aspectos de las transacciones automáticamente.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Smart Contracts}
+		\begin{figure}[h]
+			\includegraphics[scale=.55]{smartcontract_figure}
+			\centering
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}
@@ -642,7 +658,7 @@
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Smart contract}
+		\frametitle{Smart contract en Fabric}
 		Para asegurar que una transacción creada a partir de un \textbf{smart contract} sea válida, ésta debe estar firmada por múltiples organizaciones.\\
 		\vspace{4mm}
 		En Fabric los smart contracts se despliegan en paquetes referidos como \textbf{chaincode}. El chaincode se \textbf{instala} en los peer nodes de la organización y después se \textbf{despliega} en el canal donde se ocupará. Los miembros del canal deben estar de acuerdo con su definición.

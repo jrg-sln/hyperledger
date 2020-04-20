@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.15)  20 APR 2020 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.15)  20 APR 2020 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -726,26 +726,69 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \tymin=\dimen283
 \tymax=\dimen284
 \TY@tablewidth=\dimen285
-) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+) (c:/texlive/2019/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+ (c:/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
+)
+\XKV@depth=\count173
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2019/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (c:/texlive/2019/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+ (c:/texlive/2019/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box89
+)
+\tc@llx=\dimen286
+\tc@lly=\dimen287
+\tc@urx=\dimen288
+\tc@ury=\dimen289
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (c:/texlive/2019/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen290
+\adjbox@Height=\dimen291
+\adjbox@Depth=\dimen292
+\adjbox@Totalheight=\dimen293
+\adjbox@pwidth=\dimen294
+\adjbox@pheight=\dimen295
+\adjbox@pdepth=\dimen296
+\adjbox@ptotalheight=\dimen297
+ (c:/texlive/2019/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count174
+) (c:/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box90
+\sift@deathcycles=\count175
+\@vwid@loff=\dimen298
+\@vwid@roff=\dimen299
+)) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthememiniframes.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamerinnerthemecircles.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (c:/texlive/2019/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `hyperledyer.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -783,17 +826,17 @@ LaTeX Font Info:    ... okay on input line 59.
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count173
-\scratchdimen=\dimen286
-\scratchbox=\box89
-\nofMPsegments=\count174
-\nofMParguments=\count175
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count176
-\MPscratchDim=\dimen287
-\MPnumerator=\count177
-\makeMPintoPDFobject=\count178
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count176
+\scratchdimen=\dimen300
+\scratchbox=\box91
+\nofMPsegments=\count177
+\nofMParguments=\count178
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count179
+\MPscratchDim=\dimen301
+\MPnumerator=\count180
+\makeMPintoPDFobject=\count181
+\everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -806,71 +849,71 @@ Package grfext Info: Graphics extension search list:
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box90
-Package hyperref Info: Link coloring OFF on input line 59.
+\AtBeginShipoutBox=\box92
+Package hyperref Info: Link coloring OFF on input line 60.
  (c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count182
 )
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
  (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.out) (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.out)
 \@outlinefile=\write5
 \openout5 = `hyperledyer.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 59.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 59.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 59.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 59.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 59.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 60.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 59.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 59.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 60.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 59.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 59.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 60.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 60.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 59.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 60.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 59.
+(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 60.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 59.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 60.
  (c:/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (c:/texlive/2019/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -884,16 +927,16 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (c:/texlive/2019/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
-Package ragged2e Info: ABD: executing \RaggedRight on input line 59.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 60.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 59.
+LaTeX Info: Redefining \selectfont on input line 60.
  (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.nav)
 <iimas.png, id=58, 401.5pt x 401.5pt>
 File: iimas.png Graphic file (type png)
 <use iimas.png>
-Package pdftex.def Info: iimas.png  used on input line 67.
+Package pdftex.def Info: iimas.png  used on input line 68.
 (pdftex.def)             Requested size: 68.45801pt x 68.45625pt.
  [1
 
@@ -906,7 +949,7 @@ LaTeX Info: Redefining \% on input line 1.
 <blockchain_figure.png, id=100, 370.38374pt x 233.37187pt>
 File: blockchain_figure.png Graphic file (type png)
 <use blockchain_figure.png>
-Package pdftex.def Info: blockchain_figure.png  used on input line 80.
+Package pdftex.def Info: blockchain_figure.png  used on input line 81.
 (pdftex.def)             Requested size: 148.15086pt x 93.34709pt.
  [3
 
@@ -914,12 +957,12 @@ Package pdftex.def Info: blockchain_figure.png  used on input line 80.
 <bitcoin_logo.jpg, id=110, 351.3125pt x 350.30875pt>
 File: bitcoin_logo.jpg Graphic file (type jpg)
 <use bitcoin_logo.jpg>
-Package pdftex.def Info: bitcoin_logo.jpg  used on input line 93.
+Package pdftex.def Info: bitcoin_logo.jpg  used on input line 94.
 (pdftex.def)             Requested size: 70.26125pt x 70.0605pt.
 <ethereum_logo.jpg, id=111, 451.6875pt x 451.6875pt>
 File: ethereum_logo.jpg Graphic file (type jpg)
 <use ethereum_logo.jpg>
-Package pdftex.def Info: ethereum_logo.jpg  used on input line 93.
+Package pdftex.def Info: ethereum_logo.jpg  used on input line 94.
 (pdftex.def)             Requested size: 90.33589pt x 90.33589pt.
  [4
 
@@ -927,7 +970,7 @@ Package pdftex.def Info: ethereum_logo.jpg  used on input line 93.
 <types_block.png, id=119, 356.83313pt x 148.30406pt>
 File: types_block.png Graphic file (type png)
 <use types_block.png>
-Package pdftex.def Info: types_block.png  used on input line 101.
+Package pdftex.def Info: types_block.png  used on input line 102.
 (pdftex.def)             Requested size: 249.78148pt x 103.81212pt.
  [5
 
@@ -935,97 +978,103 @@ Package pdftex.def Info: types_block.png  used on input line 101.
 <kyc_logo.png, id=128, 200.75pt x 200.75pt>
 File: kyc_logo.png Graphic file (type png)
 <use kyc_logo.png>
-Package pdftex.def Info: kyc_logo.png  used on input line 109.
+Package pdftex.def Info: kyc_logo.png  used on input line 110.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
  [6
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/kyc_logo.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 121.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 121.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
  (c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 121.
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input line 122.
  (c:/texlive/2019/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [7
 
+] [8
+
 ]
-<hyperledger_logo.png, id=145, 427.5975pt x 92.59593pt>
+<smartcontract_figure.png, id=152, 128.73094pt x 387.69844pt>
+File: smartcontract_figure.png Graphic file (type png)
+<use smartcontract_figure.png>
+Package pdftex.def Info: smartcontract_figure.png  used on input line 137.
+(pdftex.def)             Requested size: 70.80222pt x 213.23479pt.
+ [9
+
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/smartcontract_figure.PNG>]
+<hyperledger_logo.png, id=161, 427.5975pt x 92.59593pt>
 File: hyperledger_logo.png Graphic file (type png)
 <use hyperledger_logo.png>
-Package pdftex.def Info: hyperledger_logo.png  used on input line 133.
+Package pdftex.def Info: hyperledger_logo.png  used on input line 149.
 (pdftex.def)             Requested size: 128.28023pt x 27.77898pt.
- [8
-
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/hyperledger_logo.PNG>] [9
-
-]
-<besu_logo.png, id=161, 490.83376pt x 167.87718pt>
-File: besu_logo.png Graphic file (type png)
-<use besu_logo.png>
-Package pdftex.def Info: besu_logo.png  used on input line 163.
-(pdftex.def)             Requested size: 147.25125pt x 50.36354pt.
  [10
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/besu_logo.PNG>]
-<burrow_logo.png, id=171, 292.84406pt x 88.07906pt>
-File: burrow_logo.png Graphic file (type png)
-<use burrow_logo.png>
-Package pdftex.def Info: burrow_logo.png  used on input line 177.
-(pdftex.def)             Requested size: 87.85388pt x 26.4239pt.
- [11
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/hyperledger_logo.PNG>] [11
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/burrow_logo.PNG>]
-<indy_logo.png, id=181, 291.33844pt x 90.3375pt>
-File: indy_logo.png Graphic file (type png)
-<use indy_logo.png>
-Package pdftex.def Info: indy_logo.png  used on input line 191.
-(pdftex.def)             Requested size: 87.40219pt x 27.10144pt.
+]
+<besu_logo.png, id=178, 490.83376pt x 167.87718pt>
+File: besu_logo.png Graphic file (type png)
+<use besu_logo.png>
+Package pdftex.def Info: besu_logo.png  used on input line 179.
+(pdftex.def)             Requested size: 147.25125pt x 50.36354pt.
  [12
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/indy_logo.PNG>]
-<iroha_logo.png, id=190, 286.82156pt x 92.59593pt>
-File: iroha_logo.png Graphic file (type png)
-<use iroha_logo.png>
-Package pdftex.def Info: iroha_logo.png  used on input line 205.
-(pdftex.def)             Requested size: 86.04712pt x 27.77898pt.
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/besu_logo.PNG>]
+<burrow_logo.png, id=188, 292.84406pt x 88.07906pt>
+File: burrow_logo.png Graphic file (type png)
+<use burrow_logo.png>
+Package pdftex.def Info: burrow_logo.png  used on input line 193.
+(pdftex.def)             Requested size: 87.85388pt x 26.4239pt.
  [13
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/iroha_logo.PNG>]
-<sawtooth_logo.png, id=200, 296.60812pt x 68.50594pt>
-File: sawtooth_logo.png Graphic file (type png)
-<use sawtooth_logo.png>
-Package pdftex.def Info: sawtooth_logo.png  used on input line 219.
-(pdftex.def)             Requested size: 88.98311pt x 20.55193pt.
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/burrow_logo.PNG>]
+<indy_logo.png, id=198, 291.33844pt x 90.3375pt>
+File: indy_logo.png Graphic file (type png)
+<use indy_logo.png>
+Package pdftex.def Info: indy_logo.png  used on input line 207.
+(pdftex.def)             Requested size: 87.40219pt x 27.10144pt.
  [14
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/sawtooth_logo.PNG>]
-<fabric_logo.png, id=209, 293.59688pt x 95.6072pt>
-File: fabric_logo.png Graphic file (type png)
-<use fabric_logo.png>
-Package pdftex.def Info: fabric_logo.png  used on input line 229.
-(pdftex.def)             Requested size: 88.07973pt x 28.68237pt.
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/indy_logo.PNG>]
+<iroha_logo.png, id=207, 286.82156pt x 92.59593pt>
+File: iroha_logo.png Graphic file (type png)
+<use iroha_logo.png>
+Package pdftex.def Info: iroha_logo.png  used on input line 221.
+(pdftex.def)             Requested size: 86.04712pt x 27.77898pt.
  [15
 
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/iroha_logo.PNG>]
+<sawtooth_logo.png, id=216, 296.60812pt x 68.50594pt>
+File: sawtooth_logo.png Graphic file (type png)
+<use sawtooth_logo.png>
+Package pdftex.def Info: sawtooth_logo.png  used on input line 235.
+(pdftex.def)             Requested size: 88.98311pt x 20.55193pt.
+ [16
+
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/sawtooth_logo.PNG>]
+<fabric_logo.png, id=225, 293.59688pt x 95.6072pt>
+File: fabric_logo.png Graphic file (type png)
+<use fabric_logo.png>
+Package pdftex.def Info: fabric_logo.png  used on input line 245.
+(pdftex.def)             Requested size: 88.07973pt x 28.68237pt.
+ [17
+
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/fabric_logo.PNG>] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [16
-
-] [17
-
-] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [18
 
 ] [19
 
-] [20
+] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [20
 
 ] [21
 
@@ -1043,10 +1092,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [28
 
-] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [29
+] [29
 
 ] [30
 
@@ -1057,217 +1103,220 @@ LaTeX Info: Redefining \% on input line 1.
 
 ] [32
 
+] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [33
+
+] [34
+
 ]
-<git.png, id=394, 220.825pt x 92.345pt>
+<git.png, id=411, 220.825pt x 92.345pt>
 File: git.png Graphic file (type png)
 <use git.png>
-Package pdftex.def Info: git.png  used on input line 334.
+Package pdftex.def Info: git.png  used on input line 350.
 (pdftex.def)             Requested size: 66.248pt x 27.7037pt.
- [33
+ [35
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/git.png>]
-<curl.png, id=406, 411.5375pt x 123.46124pt>
+<curl.png, id=423, 411.5375pt x 123.46124pt>
 File: curl.png Graphic file (type png)
 <use curl.png>
-Package pdftex.def Info: curl.png  used on input line 346.
+Package pdftex.def Info: curl.png  used on input line 362.
 (pdftex.def)             Requested size: 123.4622pt x 37.03865pt.
- [34
+ [36
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/curl.png>]
-<docker.jpeg, id=418, 200.75pt x 200.75pt>
+<docker.jpeg, id=434, 200.75pt x 200.75pt>
 File: docker.jpeg Graphic file (type jpg)
 <use docker.jpeg>
-Package pdftex.def Info: docker.jpeg  used on input line 358.
+Package pdftex.def Info: docker.jpeg  used on input line 374.
 (pdftex.def)             Requested size: 60.22545pt x 60.22545pt.
- [35
+ [37
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/docker.jpeg>]
 File: docker.jpeg Graphic file (type jpg)
 <use docker.jpeg>
-Package pdftex.def Info: docker.jpeg  used on input line 370.
+Package pdftex.def Info: docker.jpeg  used on input line 386.
 (pdftex.def)             Requested size: 60.22545pt x 60.22545pt.
- [36
-
-]
-<go.png, id=437, 225.84375pt x 225.84375pt>
-File: go.png Graphic file (type png)
-<use go.png>
-Package pdftex.def Info: go.png  used on input line 382.
-(pdftex.def)             Requested size: 67.75363pt x 67.75363pt.
- [37
-
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/go.png>]
-<nodejs.png, id=449, 288.07625pt x 175.65625pt>
-File: nodejs.png Graphic file (type png)
-<use nodejs.png>
-Package pdftex.def Info: nodejs.png  used on input line 394.
-(pdftex.def)             Requested size: 86.42354pt x 52.69727pt.
  [38
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/nodejs.png>]
-<npm.png, id=460, 225.84375pt x 225.84375pt>
-File: npm.png Graphic file (type png)
-<use npm.png>
-Package pdftex.def Info: npm.png  used on input line 406.
+]
+<go.png, id=454, 225.84375pt x 225.84375pt>
+File: go.png Graphic file (type png)
+<use go.png>
+Package pdftex.def Info: go.png  used on input line 398.
 (pdftex.def)             Requested size: 67.75363pt x 67.75363pt.
  [39
 
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/go.png>]
+<nodejs.png, id=465, 288.07625pt x 175.65625pt>
+File: nodejs.png Graphic file (type png)
+<use nodejs.png>
+Package pdftex.def Info: nodejs.png  used on input line 410.
+(pdftex.def)             Requested size: 86.42354pt x 52.69727pt.
+ [40
+
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/nodejs.png>]
+<npm.png, id=476, 225.84375pt x 225.84375pt>
+File: npm.png Graphic file (type png)
+<use npm.png>
+Package pdftex.def Info: npm.png  used on input line 422.
+(pdftex.def)             Requested size: 67.75363pt x 67.75363pt.
+ [41
+
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/npm.png>]
-<python.png, id=471, 582.175pt x 164.615pt>
+<python.png, id=487, 582.175pt x 164.615pt>
 File: python.png Graphic file (type png)
 <use python.png>
-Package pdftex.def Info: python.png  used on input line 418.
+Package pdftex.def Info: python.png  used on input line 434.
 (pdftex.def)             Requested size: 174.65384pt x 49.38487pt.
- [40
+ [42
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/python.png>] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [41
+) [43
 
-] [42
+] [44
 
 ]
-Overfull \hbox (0.47044pt too wide) in paragraph at lines 443--443
+Overfull \hbox (0.47044pt too wide) in paragraph at lines 459--459
 []\OT1/cmss/m/n/10.95 Para la ins-ta-la-ci^^Son sim-ple-men-te hay que des-car-gar los bi-na-rios y las im^^Sage- 
  []
 
-<install_01.png, id=508, 336.25626pt x 30.1125pt>
+<install_01.png, id=525, 336.25626pt x 30.1125pt>
 File: install_01.png Graphic file (type png)
 <use install_01.png>
-Package pdftex.def Info: install_01.png  used on input line 443.
+Package pdftex.def Info: install_01.png  used on input line 459.
 (pdftex.def)             Requested size: 235.37776pt x 21.07858pt.
-<install_04.png, id=509, 465.23813pt x 21.83156pt>
+<install_04.png, id=526, 465.23813pt x 21.83156pt>
 File: install_04.png Graphic file (type png)
 <use install_04.png>
-Package pdftex.def Info: install_04.png  used on input line 443.
+Package pdftex.def Info: install_04.png  used on input line 459.
 (pdftex.def)             Requested size: 232.61848pt x 10.91574pt.
-[43
+[45
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/install_01.png> <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/install_04.PNG>]
-<install_02.png, id=521, 174.6525pt x 171.64125pt>
+<install_02.png, id=537, 174.6525pt x 171.64125pt>
 File: install_02.png Graphic file (type png)
 <use install_02.png>
-Package pdftex.def Info: install_02.png  used on input line 452.
+Package pdftex.def Info: install_02.png  used on input line 468.
 (pdftex.def)             Requested size: 87.32603pt x 85.8204pt.
- [44
+ [46
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/install_02.png>]
-<install_03.png, id=531, 498.86375pt x 28.105pt>
+<install_03.png, id=548, 498.86375pt x 28.105pt>
 File: install_03.png Graphic file (type png)
 <use install_03.png>
-Package pdftex.def Info: install_03.png  used on input line 464.
+Package pdftex.def Info: install_03.png  used on input line 480.
 (pdftex.def)             Requested size: 249.43126pt x 14.05246pt.
- [45
+ [47
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/install_03.png>] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [46
+) [48
 
-] [47
+] [49
 
 ] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [48
+) [50
 
 ]
-<start_01.png, id=584, 718.685pt x 337.26pt>
+<start_01.png, id=601, 718.685pt x 337.26pt>
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 484.
+Package pdftex.def Info: start_01.png  used on input line 500.
 (pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
- [49
+ [51
 
  <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/start_01.png>]
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 493.
-(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
- [50
-
-]
-File: start_01.png Graphic file (type png)
-<use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 502.
-(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
- [51
-
-]
-File: start_01.png Graphic file (type png)
-<use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 511.
+Package pdftex.def Info: start_01.png  used on input line 509.
 (pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
  [52
 
 ]
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 520.
+Package pdftex.def Info: start_01.png  used on input line 518.
 (pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
  [53
 
 ]
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 529.
+Package pdftex.def Info: start_01.png  used on input line 527.
 (pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
  [54
 
 ]
-<start_02.png, id=635, 406.51875pt x 249.93375pt>
-File: start_02.png Graphic file (type png)
-<use start_02.png>
-Package pdftex.def Info: start_02.png  used on input line 541.
-(pdftex.def)             Requested size: 203.25887pt x 124.96657pt.
- [55
-
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/start_02.png>]
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 550.
+Package pdftex.def Info: start_01.png  used on input line 536.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [55
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 545.
 (pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
  [56
 
 ]
+<start_02.png, id=652, 406.51875pt x 249.93375pt>
+File: start_02.png Graphic file (type png)
+<use start_02.png>
+Package pdftex.def Info: start_02.png  used on input line 557.
+(pdftex.def)             Requested size: 203.25887pt x 124.96657pt.
+ [57
+
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/start_02.png>]
 File: start_01.png Graphic file (type png)
 <use start_01.png>
-Package pdftex.def Info: start_01.png  used on input line 562.
+Package pdftex.def Info: start_01.png  used on input line 566.
+(pdftex.def)             Requested size: 215.60716pt x 101.17877pt.
+ [58
+
+]
+File: start_01.png Graphic file (type png)
+<use start_01.png>
+Package pdftex.def Info: start_01.png  used on input line 578.
 (pdftex.def)             Requested size: 287.4689pt x 134.9016pt.
- [57
+ [59
 
 ] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [58
+) [60
 
-] [59
+] [61
 
-] [60
+] [62
 
 ]
-<start_05.png, id=699, 761.84625pt x 491.8375pt>
+<start_05.png, id=716, 761.84625pt x 491.8375pt>
 File: start_05.png Graphic file (type png)
 <use start_05.png>
-Package pdftex.def Info: start_05.png  used on input line 585.
+Package pdftex.def Info: start_05.png  used on input line 601.
 (pdftex.def)             Requested size: 304.7331pt x 196.7315pt.
- [61
+ [63
 
- <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/start_05.png>] [62
+ <c:/Users/RENEADRIANDAVILAPERE/hyperledger/presentation/start_05.png>] [64
 
-] [63
-
-] [64
-
-]
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 623.
- [65
+] [65
 
 ] [66
 
-] [67
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 639.
+ [67
 
 ] [68
 
@@ -1279,45 +1328,49 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 
 ] [72
 
+] [73
+
+] [74
+
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 715.
-LaTeX Font Info:    No file OMScmss.fd. on input line 715.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 731.
+LaTeX Font Info:    No file OMScmss.fd. on input line 731.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 715.
+(Font)              for symbol `textbraceleft' on input line 731.
 
-[73
-
-] [74
-
-] [75
+[75
 
 ] [76
 
 ] [77
 
+] [78
+
+] [79
+
 ]
-Overfull \hbox (1.29219pt too wide) in paragraph at lines 794--794
+Overfull \hbox (1.29219pt too wide) in paragraph at lines 810--810
 []\OT1/cmss/m/n/10.95 Para \OT1/cmss/bx/n/10.95 ter-mi-nar \OT1/cmss/m/n/10.95 un pro-yec-to se de-be \OT1/cmss/bx/n/10.95 dar de ba-ja la red\OT1/cmss/m/n/10.95 . El co-man-do \OT1/cmss/bx/n/10.95 down 
  []
 
-[78
-
-] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [79
-
-] [80
+[80
 
 ] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 ) [81
 
-] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.bbl) [82
+] [82
+
+] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [83
+
+] (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.bbl) [84
 
 ]
 \tf@nav=\write6
@@ -1329,34 +1382,34 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `hyperledyer.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 828.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 828.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 844.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 844.
  (c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 828.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 828.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 844.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 844.
 Package rerunfilecheck Info: File `hyperledyer.out' has not changed.
-(rerunfilecheck)             Checksum: 64EA40FDA1A28BC9CC0D18A44BE36F14;697.
+(rerunfilecheck)             Checksum: 2FDDA8BEB856EDF03578CB1CD43D528C;697.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25248 strings out of 492623
- 522471 string characters out of 6133305
- 621954 words of memory out of 5000000
- 28352 multiletter control sequences out of 15000+600000
+ 26250 strings out of 492623
+ 538877 string characters out of 6133305
+ 640063 words of memory out of 5000000
+ 29315 multiletter control sequences out of 15000+600000
  13622 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,16n,80p,833b,876s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,80p,833b,914s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.pdf (82 pages, 1626962 bytes).
+Output written on c:\Users\RENEADRIANDAVILAPERE\hyperledger\presentation/hyperledyer.pdf (84 pages, 1642598 bytes).
 PDF statistics:
- 976 PDF objects out of 1000 (max. 8388607)
- 818 compressed objects within 9 object streams
- 179 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 994 PDF objects out of 1000 (max. 8388607)
+ 832 compressed objects within 9 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 
