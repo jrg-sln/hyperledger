@@ -69,28 +69,12 @@
 %\begin{comment}
 	\section{Introducción}
 	\begin{frame}
-		\begin{block}{Hyperledger project}
-			La Linux Foundation se caracteriza por nutrir proyectos \textbf{open source} de \textbf{open governance} que genera comunidades sostenibles fuertes y ecosistemas prósperos.\\
-			\vspace{4mm}
-			\textbf{Linux Foundation} creó el projecto \textbf{Hyperledger} en 2015 para avanzar en la industria de la tecnología de blockchain.
-		\end{block}
-	\end{frame}
-
-	\begin{frame}
-		\begin{block}{Hyperledger project}
-			\textbf{Hiperledger Fabric} es uno de los \textbf{proyectos de blockchain en Hyperledger}, el cual es un ledger que utiliza smart contracts y donde los participantes manejan las transacciones.
-		\end{block}
-	\end{frame}
-
-	\subsection{Blockchain}
-	\begin{frame}
 		\frametitle{Blockchain}
 		En términos generales, una \textbf{blockchain} se podría considerar como un \textbf{libro mayor} en el área contable \textbf{(ledger)}. Es un lugar donde se llevan a cabo transacciones inmutables dentro de una red de nodos distribuida.\\
 		\vspace{4mm}
 		Cada uno de estos \textbf{nodos} mantiene una \textbf{copia del libro mayor} aplicando transacciones que han sido validadas mediante el protocolo de consenso, agrupadas en bloques que incluyen un hash que permite enlazar cada bloque con su bloque anterior.
 	\end{frame}
 	
-	\subsection{Criptomonedas}
 	\begin{frame}
 		\frametitle{Criptomonedas}
 		La aplicación más reconocida de blockchain es la criptomoneda \textbf{Bitcoin}.\\
@@ -116,6 +100,114 @@
 			\item Baja latencia en la confirmación de transacción.
 			\item Privacidad y confidencialidad de las transacciones y de la información de las transacciones.
 		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			La Linux Foundation se caracteriza por nutrir proyectos \textbf{open source} de \textbf{open governance} que genera comunidades sostenibles fuertes y ecosistemas prósperos.\\
+			\vspace{4mm}
+			\textbf{Linux Foundation} creó el projecto \textbf{Hyperledger} en 2015 para avanzar en la industria de la tecnología de blockchain.
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{hyperledger_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			La comunidad ha desarrollado los siguientes \textbf{Distributed Ledgers}:
+
+			\begin{itemize}
+				\item \textbf{Hyperledger Besu}.
+				\item \textbf{Hyperledger Burrow}.
+				\item \textbf{Hyperledger Indy}.
+				\item \textbf{Hyperledger Iroha}.
+				\item \textbf{Hyperledger Sawtooth}.
+				\item \textbf{Hyperledger Fabric}.
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Besu}, cliente \textit{Ethereum} basado en Java, alternativa para crear casos de uso de redes públicas y autorizadas.
+			\begin{itemize}
+				\item Usa tecnología Apache.
+				\item Usa redes de prueba Rinkeby, Ropsten y Görli.
+				\item Usa algoritmos de consenso PoW, PoA, IBFT.
+			\end{itemize}
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{besu_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Burrow}, distribución completa de blockchain binario único centrado en la simplicidad, la velocidad y la ergonomía del desarrollador.
+			\begin{itemize}
+				\item Admite Smart Contracts basados en EVM y WASM.
+				\item Usa consenso BFT mediante el algoritmo Tendermint.
+			\end{itemize}
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{burrow_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Indy}, proporciona herramientas, bibliotecas y componentes reutilizables para proporcionar identidades digitales arraigadas en blockchains u otros ledgers distribuidos.
+			\begin{itemize}
+				\item Tiene como objetivo interoperabilidad entre dominios administrativos o entre aplicaciones.
+				\item Interoperable con otras blockchain o de uso independiente para descentralización.
+			\end{itemize}
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{indy_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Iroha}, está diseñado para ser simple y fácil de incorporar en proyectos de infraestructura o IoT que requieren tecnología de contabilidad distribuida.
+			\begin{itemize}
+				\item Construcción y diseño en C++ modular. 
+				\item Usa un algoritmo tolerante a fallas nuevo llamado YAC.
+			\end{itemize}
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{iroha_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Sawtooth}, ofrece una arquitectura flexible y modular que separa el sistema central del dominio de la aplicación.
+			\begin{itemize}
+				\item Los contratos inteligentes pueden especificar las reglas de negocio para las aplicaciones.
+				\item Admite diversos algoritmos de consenso como PBFT o PoET.
+			\end{itemize}
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{sawtooth_logo}
+				\centering
+			\end{figure}
+		\end{block}
+	\end{frame}
+
+	\begin{frame}
+		\begin{block}{Hyperledger project community}
+			\textbf{Hyperledger Fabric} es uno de los \textbf{proyectos de blockchain en Hyperledger}, el cual es un ledger que utiliza smart contracts y donde los participantes manejan las transacciones.
+			\begin{figure}[h]
+				\includegraphics[scale=.3]{fabric_logo}
+				\centering
+			\end{figure}
+		\end{block}
 	\end{frame}
 	
 	\section{Hyperledger Fabric v2.0}
