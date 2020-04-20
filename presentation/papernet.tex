@@ -35,7 +35,7 @@
 \mode
 <all>
 
-\title[]{Commercial paper}
+\title[]{Client application \& Commercial paper}
 \subtitle{Fundamentos de blockchains}
 \author{René Dávila - Jorge Solano}
 %\institute{IIMAS}
@@ -64,8 +64,174 @@
 		\end{center}
 		\titlepage 
 	\end{frame}
+	
+	\section{Aplicación cliente}
+	
+	\begin{frame}
+		Comunicación entre una aplicación cliente y la red de blockchain.
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{app_01}
+			\centering
+		\end{figure}
+		\centering{\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/developapps/application.html}}}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Levantar la red blockchain}
+		En la ubicación cd fabric-samples/fabcar se levanta la red \textbf{FabCar}
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ ./startFabric.sh javascript \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Levantar la red blockchain}
+		\textbf{./startFabric.sh javascript} realiza las siguientes tareas:
+		\begin{itemize}
+			\item Despliega la red \textbf{test-network} de Fabric (2 peer nodes y un ordering service).
+			\item Utiliza \textbf{autoridades certificadoras} (CA) para crear los certificados y llaves de la aplicación.
+			\item \textbf{Instala el smart contract} de FabCar en el canal mychannel en su versión en JavaScript.
+			\item \textbf{Ejecuta el smart contract} para traer los datos iniciales al ledger.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Instalar la aplicación}
+		En la carpteta cd fabric-samples/fabcar/javascript se encuentran los programas que serán ejecutados por node.js. Para ello hay que instalar las dependencias necesarias.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ npm install \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Usuario administrador}
+		Se debe generar la llave pública, la llave privada y el certificado X.509 para admin utilizando el programa enroll.js. Este proceso utiliza una \textbf{Solicitud de firma de certificado}, primero se generan las llaves públicas y privadas de manera local y luego se envía la llave pública a la CA, la cual regresa un certificado codificado para ser usado por la aplicación. 
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ node enrollAdmin.js \\
+				\hline
+				\$ ls wallet/ \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
 
-	\section{Commercial paper}
+	\begin{frame}
+		\frametitle{Usuario cliente}
+		Ahora hay que crear una aplicación cliente para interactuar con la blockchain. 
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ node registerUser.js \\
+				\hline
+				\$ ls wallet/ \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Solicitar el ledger}
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{app_02}
+			\centering
+		\end{figure}
+		Los valores actuales del ledger están en el \textbf{world state}. El world state está representado como un conjunto llave-valor.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Aplicación cliente}
+		El usuario appUser realiza la solicitud de todos los carros del ledger.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ node query.js \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{app_03}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contrato FabCar}
+		En cd fabric-samples/chaincode/fabcar/javascript/lib se puede ver el smart contract de FabCar.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ code fabcar.js \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Actualizar el ledger}
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{app_04}
+			\centering
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Crear un nuevo carro}
+		Vamos a crear un nuevo carro, para ello en cd fabric-samples/fabcar/javascript se tiene el programa invoke.js.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ code invoke.js \\
+				\hline
+				\$ node invoke.js \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Cambio de dueño}
+		Vamos a cambiar de dueño al nuevo carro que se creó, para ello en cd fabric-samples/fabcar/javascript se tiene el programa invoke.js en lugar de createCar se invocará changeCarOwner.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ await contract.submitTransaction('changeCarOwner', 'CAR12', 'Dave'); \\
+				\hline
+				\$ node invoke.js \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Limpiar}
+		Para terminar en cd fabric-samples/fabcar, es necesario dar de baja la red, las CA, los nodos peer y ordering y eliminar los wallet de usuario y administrador.
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				\$ ./networkDown.sh \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Referencia}
+		\begin{center}
+			\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/write_first_app.html}
+		\end{center}
+	\end{frame}
+	
+	\section{Papel comercial}
 	
 	\begin{frame}
 		Diagrama de las organizaciones:
@@ -495,12 +661,10 @@
 		Este script dará de baja los peers, los contenedores, el nodo ordering service y el logspout. Además, eliminará las identidades de Isabella y Balaji.
 	\end{frame}
 	
-	\section{Referencias}
-	
-	\begin{frame} [allowframebreaks]
-		\frametitle{Referencias}
-		\begin{itemize}
-			\item \url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/tutorial/commercial\_paper.html}
-		\end{itemize}
+	\begin{frame}
+		\frametitle{Referencia}
+		\begin{center}
+			\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/tutorial/commercial\_paper.html}
+		\end{center}
 	\end{frame}
 \end{document}
