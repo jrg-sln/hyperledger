@@ -73,6 +73,10 @@
 		En términos generales, una \textbf{blockchain} se podría considerar como un \textbf{libro mayor} en el área contable \textbf{(ledger)}. Es un lugar donde se llevan a cabo transacciones inmutables dentro de una red de nodos distribuida.\\
 		\vspace{4mm}
 		Cada uno de estos \textbf{nodos} mantiene una \textbf{copia del libro mayor} aplicando transacciones que han sido validadas mediante el protocolo de consenso, agrupadas en bloques que incluyen un hash que permite enlazar cada bloque con su bloque anterior.
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{blockchain_figure}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
@@ -80,14 +84,28 @@
 		La aplicación más reconocida de blockchain es la criptomoneda \textbf{Bitcoin}.\\
 		\vspace{4mm}
 		\textbf{Ethereum} es una criptomoneda alternativa, la cual integra muchas características de Bitcoin, pero agrega contratos inteligentes (smart contracts) con el fin de crear una plataforma para aplicaciones distribuidas.
+		\begin{figure}[h]
+			\includegraphics[scale=.2]{bitcoin_logo}
+			\centering
+			\includegraphics[scale=.2]{ethereum_logo}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
 		Tanto \textbf{Bitcoin} como \textbf{Ethereum} caen en la clasificación de blockchain, las cuales clasificaremos como tecnologías de \textbf{blockchain públicas y sin permiso}. Básicamente, son redes públicas, abiertas a cualquiera, donde los participantes interactúan de manera anónima.
+		\begin{figure}[h]
+			\includegraphics[scale=.7]{types_block}
+			\centering
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}
 		Sin embargo, en muchos casos de \textbf{uso empresarial} la \textbf{identidad} de los participantes es un \textbf{requisito indispensable}, como por ejemplo en una transacción financiera, donde las regulaciones el Know Your Customer (KYC) y el Anti-Money Laundering (AML) deben seguirse de manera puntual.
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{kyc_logo}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
@@ -224,7 +242,7 @@
 	
 	\begin{frame}
 		\frametitle{Private and permissioned}
-		\textbf{Hiperledger Fabric} destaca por sobre otros sistemas de blockchain porque \textbf{es privada y autorizada}, esto es, los miembros de la red se registran a través de un Membership Service Provider (MSP) de confianza.\\
+		\textbf{Hyperledger Fabric} destaca por sobre otros sistemas de blockchain porque \textbf{es privada y autorizada}, esto es, los miembros de la red se registran a través de un Membership Service Provider (MSP) de confianza.\\
 	\end{frame}
 
 	\begin{frame}
@@ -417,6 +435,9 @@
 			\setlength{\fboxsep}{3mm}
 			\framebox[9cm][c]{
 					\includegraphics[scale=.7]{install_01}
+			}
+			\framebox[9cm][c]{
+				\includegraphics[scale=.5]{install_04}
 			}
 		\end{center}
 	\end{frame}
