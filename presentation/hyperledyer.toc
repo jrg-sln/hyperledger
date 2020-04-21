@@ -7,6 +7,6 @@
 \beamer@subsectionintoc {3}{2}{Instalaci\IeC {\'o}n}{45}{0}{3}
 \beamer@sectionintoc {4}{Hyperledger en acci\IeC {\'o}n}{50}{0}{4}
 \beamer@subsectionintoc {4}{1}{Contexto}{52}{0}{4}
-\beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{62}{0}{4}
-\beamer@subsectionintoc {4}{3}{Logspout}{83}{0}{4}
-\beamer@sectionintoc {5}{Referencias}{85}{0}{5}
+\beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{63}{0}{4}
+\beamer@subsectionintoc {4}{3}{Logspout}{84}{0}{4}
+\beamer@sectionintoc {5}{Referencias}{86}{0}{5}
