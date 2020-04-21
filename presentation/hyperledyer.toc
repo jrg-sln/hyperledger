@@ -1,12 +1,12 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{2}{0}{1}
-\beamer@sectionintoc {2}{Hyperledger Fabric v2.0}{16}{0}{2}
-\beamer@subsectionintoc {2}{1}{Componentes y caracter\IeC {\'\i }sticas}{18}{0}{2}
-\beamer@sectionintoc {3}{Instalaci\IeC {\'o}n de Hyperledger Fabric v2.0}{29}{0}{3}
-\beamer@subsectionintoc {3}{1}{Prerrequisitos de instalaci\IeC {\'o}n}{31}{0}{3}
-\beamer@subsectionintoc {3}{2}{Instalaci\IeC {\'o}n}{41}{0}{3}
-\beamer@sectionintoc {4}{Hyperledger en acci\IeC {\'o}n}{46}{0}{4}
-\beamer@subsectionintoc {4}{1}{Contexto}{48}{0}{4}
-\beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{58}{0}{4}
-\beamer@subsectionintoc {4}{3}{Logspout}{79}{0}{4}
-\beamer@sectionintoc {5}{Referencias}{81}{0}{5}
+\beamer@sectionintoc {2}{Hyperledger Fabric v2.0}{18}{0}{2}
+\beamer@subsectionintoc {2}{1}{Componentes y caracter\IeC {\'\i }sticas}{20}{0}{2}
+\beamer@sectionintoc {3}{Instalaci\IeC {\'o}n de Hyperledger Fabric v2.0}{33}{0}{3}
+\beamer@subsectionintoc {3}{1}{Prerrequisitos de instalaci\IeC {\'o}n}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Instalaci\IeC {\'o}n}{45}{0}{3}
+\beamer@sectionintoc {4}{Hyperledger en acci\IeC {\'o}n}{50}{0}{4}
+\beamer@subsectionintoc {4}{1}{Contexto}{52}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{63}{0}{4}
+\beamer@subsectionintoc {4}{3}{Logspout}{84}{0}{4}
+\beamer@sectionintoc {5}{Referencias}{86}{0}{5}

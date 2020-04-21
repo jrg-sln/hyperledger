@@ -10,6 +10,7 @@
 \usetikzlibrary{shapes,arrows,spy,positioning,snakes}
 \usepackage{verbatim} % comentarios
 \usepackage{tabulary} % tablas
+\usepackage[export]{adjustbox}
 
 \DeclareOptionBeamer{compress}{\beamer@compresstrue}
 \ProcessOptionsBeamer
@@ -73,6 +74,10 @@
 		En términos generales, una \textbf{blockchain} se podría considerar como un \textbf{libro mayor} en el área contable \textbf{(ledger)}. Es un lugar donde se llevan a cabo transacciones inmutables dentro de una red de nodos distribuida.\\
 		\vspace{4mm}
 		Cada uno de estos \textbf{nodos} mantiene una \textbf{copia del libro mayor} aplicando transacciones que han sido validadas mediante el protocolo de consenso, agrupadas en bloques que incluyen un hash que permite enlazar cada bloque con su bloque anterior.
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{blockchain_figure}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
@@ -80,14 +85,28 @@
 		La aplicación más reconocida de blockchain es la criptomoneda \textbf{Bitcoin}.\\
 		\vspace{4mm}
 		\textbf{Ethereum} es una criptomoneda alternativa, la cual integra muchas características de Bitcoin, pero agrega contratos inteligentes (smart contracts) con el fin de crear una plataforma para aplicaciones distribuidas.
+		\begin{figure}[h]
+			\includegraphics[scale=.2]{bitcoin_logo}
+			\centering
+			\includegraphics[scale=.2]{ethereum_logo}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
 		Tanto \textbf{Bitcoin} como \textbf{Ethereum} caen en la clasificación de blockchain, las cuales clasificaremos como tecnologías de \textbf{blockchain públicas y sin permiso}. Básicamente, son redes públicas, abiertas a cualquiera, donde los participantes interactúan de manera anónima.
+		\begin{figure}[h]
+			\includegraphics[scale=.7]{types_block}
+			\centering
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}
-		Sin embargo, en muchos casos de \textbf{uso empresarial} la \textbf{identidad} de los participantes es un \textbf{requisito indispensable}, como por ejemplo en una transacción financiera, donde las regulaciones el Know Your Customer (KYC) y el Anti-Money Laundering (AML) deben seguirse de manera puntual.
+		En los casos de \textbf{uso empresarial} la \textbf{identidad} de los participantes es un \textbf{requisito indispensable}, como por ejemplo en una transacción financiera, donde las regulaciones el Know Your Customer (KYC) y el Anti-Money Laundering (AML) deben seguirse de manera puntual.
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{kyc_logo}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\begin{frame}
@@ -100,6 +119,21 @@
 			\item Baja latencia en la confirmación de transacción.
 			\item Privacidad y confidencialidad de las transacciones y de la información de las transacciones.
 		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Smart Contracts}
+		Una red blockchain utiliza \textbf{Smart Contracts} para proporcionar acceso controlado al libro mayor.\\
+		\vspace{4mm}
+		No solo son un mecanismo clave para encapsular la información y mantenerla simple en toda la red, sino que también se pueden escribir para permitir a los participantes ejecutar ciertos aspectos de las transacciones automáticamente.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Smart Contracts}
+		\begin{figure}[h]
+			\includegraphics[scale=.55]{smartcontract_figure}
+			\centering
+		\end{figure}
 	\end{frame}
 
 	\begin{frame}
@@ -224,7 +258,7 @@
 	
 	\begin{frame}
 		\frametitle{Private and permissioned}
-		\textbf{Hiperledger Fabric} destaca por sobre otros sistemas de blockchain porque \textbf{es privada y autorizada}, esto es, los miembros de la red se registran a través de un Membership Service Provider (MSP) de confianza.\\
+		\textbf{Hyperledger Fabric} destaca por sobre otros sistemas de blockchain porque \textbf{es privada y autorizada}, esto es, los miembros de la red se registran a través de un Membership Service Provider (MSP) de confianza.\\
 	\end{frame}
 
 	\begin{frame}
@@ -277,6 +311,24 @@
 		\textbf{Fabric} puede aprovechar los protocolos de consenso que \textbf{no requieren criptomonedas} nativas para incentivar la minería o la ejecución de contratos inteligentes. Evitar las criptomonedas \textbf{reduce} de manera significativa \textbf{el riesgo o los vectores de ataque}.\\
 		\vspace{4mm}
 		Además, la ausencia de las operaciones de minería criptográfica permite que la plataforma se pueda desplegar con prácticamente el mismo costo operacional que cualquier otro sistema distribuido. 
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Modelo de Hyperledger Fabric}
+		\begin{itemize}
+			\item \textbf{Assets}.- las definiciones de activos permiten el intercambio de casi cualquier cosa con valor monetario a través de la red, desde alimentos enteros hasta autos antiguos y futuros de divisas.
+			\item \textbf{Chaincode}.- la ejecución de Chaincode se divide del orden de las transacciones, lo que limita los niveles requeridos de confianza y verificación en todos los tipos de nodos y optimiza la escalabilidad y el rendimiento de la red.
+			\item \textbf{Ledger Features}.- el ledger inmutable y compartido codifica todo el historial de transacciones para cada canal e incluye la capacidad de consulta similar a SQL para una auditoría eficiente y resolución de disputas.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Modelo de Hyperledger Fabric}
+		\begin{itemize}
+			\item \textbf{Privacy}.- los canales y la recopilación de datos privados permiten transacciones multilaterales privadas y confidenciales que generalmente requieren las empresas competidoras y las industrias reguladas que intercambian activos en una red común.
+			\item \textbf{Security \& Membership Services}.- la membresía autorizada proporciona una red blockchain confiable, donde los participantes saben que todas las transacciones pueden ser detectadas y rastreadas por reguladores y auditores autorizados.
+			\item \textbf{Consensus}.- un enfoque único para el consenso permite la flexibilidad y escalabilidad necesarias para la empresa.
+		\end{itemize}
 	\end{frame}
 	
 	\section{Instalación de Hyperledger Fabric v2.0}
@@ -389,7 +441,7 @@
 	
 	\begin{frame}
 		\frametitle{Python}
-		\textbf{Python} \textbf{lenguaje de programación interpretado}dwcx, de alto nivel y de propósito general.
+		\textbf{Python} \textbf{lenguaje de programación interpretado}, de alto nivel y de propósito general.
 		\begin{figure}[h]
 			\includegraphics[scale=.3]{python}
 			\centering
@@ -417,6 +469,9 @@
 			\setlength{\fboxsep}{3mm}
 			\framebox[9cm][c]{
 					\includegraphics[scale=.7]{install_01}
+			}
+			\framebox[9cm][c]{
+				\includegraphics[scale=.5]{install_04}
 			}
 		\end{center}
 	\end{frame}
@@ -537,7 +592,15 @@
 		\begin{center}
 			\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/network/network.html}}
 		\end{center}
-		
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contexto}
+		Análisis paso a paso previo a ejecución.
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{start_03}
+			\centering
+		\end{figure}
 	\end{frame}
 	
 	\subsection{Ejecución}
@@ -621,7 +684,7 @@
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{Smart contract}
+		\frametitle{Smart contract en Fabric}
 		Para asegurar que una transacción creada a partir de un \textbf{smart contract} sea válida, ésta debe estar firmada por múltiples organizaciones.\\
 		\vspace{4mm}
 		En Fabric los smart contracts se despliegan en paquetes referidos como \textbf{chaincode}. El chaincode se \textbf{instala} en los peer nodes de la organización y después se \textbf{despliega} en el canal donde se ocupará. Los miembros del canal deben estar de acuerdo con su definición.
