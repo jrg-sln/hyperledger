@@ -25,16 +25,33 @@
 		\LARGE
 		\includegraphics[width=4cm,height=4cm]{iimas}\\[\bigskipamount]
 	\end{center}
-\posttitle{
+}
+\posttitle{}
 
 \begin{document}
 	%\includegraphics [width =0.2 \textwidth ]{iimas}
 	\maketitle
 	
 	\begin{enumerate}
-		\item En Hyperledger Fabric siempre debe existir un servicio de ordenamiento para la administración de la red. Describe como funciona ordering service en Fabric (\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/orderer/ordering\_service.html}).
+		\item En Hyperledger Fabric siempre debe existir un servicio de ordenamiento para la administración de la red. Describe como funciona ordering service en Fabric (\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/orderer/ordering\_service.html}) (2.5 puntos).
 		
-		\item Hyperledger, por defecto, utiliza el algoritmo Raft para llevar a cabo el consenso en la red Fabric. Describe el algoritmo de consenso Raft (\url{https://raft.github.io}).
+		\item Hyperledger, por defecto, utiliza el algoritmo Raft para llevar a cabo el consenso en la red Fabric. Describe el algoritmo de consenso Raft (\url{https://raft.github.io}) (2.5 puntos).
+		
+		\item En la presentación papernet.pdf está el caso de uso Aplicación cliente (páginas 3-16). Tomando como base ese caso realiza lo siguiente (2.5 puntos):
+		\begin{enumerate}
+			\item Modifica el smart contract.\\
+			En fabric-samples/chaincode/fabcar/javascript/fabcar.js agrega un método al smart contract (ya sea de consulta o de modificación de la blockchain). Muestra la función que agregaste.
+			\item Invoca el método creado desde una aplicación cliente.\\
+			Si es de consulta utiliza el archivo fabric-samples/fabcar/javascript/query.js, si es de modificación utiliza el archivo fabric-samples/fabcar/javascript/invoke.js. Muestra la invocación que realizaste al método y agrega una captura de pantalla con la salida obtenida.
+		\end{enumerate}
+	
+		\item En la presentación papernet.pdf está el caso de uso Papel comercial (páginas 18-62). Tomando como base ese caso realiza lo siguiente (2.5 puntos):
+		\begin{enumerate}
+			\item Instala y aprueba el contrato de parte de MagnetoCorp.\\
+			Sigue las instrucciones que vienen en la presentación de la página 18 a la página 61. Muestra los contenedores docker corriendo en tu máquina.
+			\item Emite un papel comercial de parte de MagnetoCorp.\\
+			Ahora, imita a Isabella y emite un papel comercial (páginas 46-51). Muestra qué pasa cuando invocas a issue.js y explica por qué pasa eso.
+		\end{enumerate}
 	\end{enumerate}
 
 \end{document}
