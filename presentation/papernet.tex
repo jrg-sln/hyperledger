@@ -35,7 +35,7 @@
 \mode
 <all>
 
-\title[]{Client application \& Commercial paper}
+\title[]{Hyperledger práctico}
 \subtitle{Fundamentos de blockchains}
 \author{René Dávila - Jorge Solano}
 %\institute{IIMAS}
@@ -63,6 +63,374 @@
 			\includegraphics [width =0.2 \textwidth ]{iimas}
 		\end{center}
 		\titlepage 
+	\end{frame}
+	
+	\section{Hyperledger en acción}
+	
+	\begin{frame}
+		Para iniciar con la implementación de una \textbf{blockchain empresarial} (particular) se requiere tener un diagrama general de las entidades \textbf{participantes y su interacción}.\\
+		\vspace{4mm}
+		A continuación se describirán todos los \textbf{elementos} que pueden interactuar \textbf{en Hyperledger Fabric}, a partir de un ejemplo genérico.
+	\end{frame}
+	
+	\subsection{Contexto}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		Se tienen 4 organizaciones (R1, R2, R3 y R4). R4 es el iniciador de la red (no hará transacciones de negocios). R1 y R2 tienen una comunicación privada en la red. De la misma manera R2 y R3.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		R1 tiene una aplicación cliente A1 que hace transacciones en C1. R2 tiene una A2 que hace transacciones en C1 y en C2. R3 tiene una A3 que hace transacciones en el C2.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		El peer node P1 tiene una copia del ledger L1 asociado con C1 y un contrato inteligente S5. El peer node P2 tienen una copia de L1 y S5 asociado a C1 y una copia de L2 y S6 asociado a C2. El peer node P3 tiene una copia de L2 y S6 asociado a C2.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		La red está gobernada de acuerdo a las políticas especificadas en la configuración de red NC4. Las políticas están bajo el control de R1 y R4.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		C1 está gobernado de acuerdo a las políticas especificadas en la configuración del canal CC1; el canal está gobernado por R1 y R2. C2 está gobernado por las políticas especificadas en la CC2; el canal está gobernado por R2 y R3.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		Hay un nodo de ordering service O4 que funge como un punto de administración de la red N. O4 soporta los canales de aplicación C1 y C2, con el fin de ordenar los bloques de transacciones para su distrubución.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		Ordering sevice
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{start_02}
+			\centering
+		\end{figure}
+		\begin{center}
+			\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/orderer/ordering_service.html}}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		Cada una de las organizaciones tiene su propia Autoridad Certificadora CA.
+		\begin{figure}[h]
+			\includegraphics[scale=.3]{start_01}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{start_01}
+			\centering
+		\end{figure}
+		\begin{center}
+			\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/network/network.html}}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Contexto}
+		Análisis paso a paso previo a ejecución.
+		\begin{figure}[h]
+			\includegraphics[scale=.5]{start_03}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\subsection{Ejecución}
+	
+	\begin{frame}
+		\frametitle{Ejecución}
+		Una vez descargado Hyperledger Fabric ya es posible interactuar con alguno de los proyectos.\\
+		\vspace{4mm}
+		En realidad, se descargaron imágenes y ejemplos Docker, esto es, contenedores con aplicaciones precargadas, las cuales se guardaron en la carpeta \textbf{fabric-samples}.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Ejecución}
+		Vamos a trabajar con el proyecto test-network que está dentro de la carpeta fabric-samples (cd fabric-samples/test-network).\\
+		\vspace{4mm}
+		En esa carpeta se encuentra el script \textit{network.sh}, el cual levanta una red Fabric utilizando las imágenes Docker descargadas. Para ver el texto de ayuda del script se puede ejecutar \textit{network.sh -h}
+	\end{frame}
+	
+	\begin{frame}
+		\begin{figure}[h]
+			\includegraphics[scale=.4]{start_05}
+			\centering
+		\end{figure}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear la red}
+		El siguiente comando levanta la red del proyecto \textbf{test-network}, la cual consiste en dos peer nodes y un nodo ordering service; todavía no se crea algún canal:
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{./network.sh up}
+			}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Listar contenedores}
+		En este momento se encuentran los contenedores Docker corriendo (los dos nodos y el nodo orden de servicio). El siguiente comando permite listar los contenedores en ejecución:
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{docker ps -a}
+			}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Consorcio}
+		\textbf{test-network} tiene  un consorcio (grupo de organizaciones)  con dos miembros Org1 y Org2, además de una organización que mantiene el orden de servicio (ordering service) en la red.\\
+		\vspace{4mm}
+		Los \textbf{peers nodes} son los componentes fundamentales en cualquier red Fabric. Ellos son los encargados de \textbf{almacenar} en el ledger de la \textbf{blockchain} y validar las transacciones antes de que se suban al ledger. Además, ellos \textbf{ejecutan los smart contracts} los cuales contienen la lógica del negocio.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Ordering service}
+		Todas las redes Fabric deben incluir un nodo \textbf{ordering service}. Este nodo es el que decide el orden y las transacciones que se incluyen en un bloque.\\
+		\vspace{4mm}
+		Los \textbf{ordering nodes} hace uso de la configuración de la red (define las capacidades de la red) y los parámetros de configuración del canal. Por defecto, los \textbf{ordering nodes} utilizan el algoritmo de consenso \textbf{Raft (\url{https://raft.github.io})}.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Canales}
+		La red que se está ejecutando cuenta con 2 peer nodes, uno por cada organización (Org1 y Org2), y un ordering node. Ahora vamos a crear un \textbf{canal para las transacciones} entre el consorcio.\\
+		\vspace{4mm}
+		Recordemos que los canales son \textbf{enlaces privados de comunicación} entre miembros específicos de la red y cada canal tiene su propio ledger de la blockchain.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear canal}
+		Para \textbf{crear un canal} entre las organizaciones Org1 y Org2 y unir los peer nodes al canal se debe ejecutar el siguiente comando:
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{./network.sh createChannel}
+			}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Smart contract en Fabric}
+		Para asegurar que una transacción creada a partir de un \textbf{smart contract} sea válida, ésta debe estar firmada por múltiples organizaciones.\\
+		\vspace{4mm}
+		En Fabric los smart contracts se despliegan en paquetes referidos como \textbf{chaincode}. El chaincode se \textbf{instala} en los peer nodes de la organización y después se \textbf{despliega} en el canal donde se ocupará. Los miembros del canal deben estar de acuerdo con su definición.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Iniciar chaincode}
+		Para \textbf{crear un chaincode} en el canal desplegado se debe ejecutar el siguiente comando:
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{./network.sh deployCC}
+			}
+		\end{center}
+		\textbf{deployCC} instala el chaincode de \textbf{fabcar} en peer0.org1.example.com y en peer0.org2.example.com y luego lo despliega en el canal.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear una aplicación cliente}
+		En este momento se puede usar una \textbf{aplicación CLI} para \textbf{interactuar con la red} (ejecutar smart contracts, actualizar canales, instalar y desplegar smart contracts).
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear una aplicación cliente}
+		Para crear a \textbf{CLI} se va a ocupar la aplicación peer que está en la carpeta \textbf{bin} de fabric-samples (ya en el PATH). También se requiere poner en el PATH la variable FABRIC\_CFG\_PATH para apuntar al archivo de configuración \textbf{core.yaml}:
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{\small{export FABRIC\_CFG\_PATH=\$PWD/../config/}}
+			}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Crear una aplicación cliente}
+		Después, se deben establecer las \textbf{variables de entorno} que permitiran operar a la aplicación CLI en la Org1:\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					Variables de entorno para Org1\\
+					\hline
+					export CORE\_PEER\_TLS\_ENABLED=true\\
+					export CORE\_PEER\_LOCALMSPID=``Org1MSP"\\
+					export CORE\_PEER\_TLS\_ROOTCERT\_FILE=\${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt\\
+					export CORE\_PEER\_MSPCONFIGPATH=\${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp\\
+					export CORE\_PEER\_ADDRESS=localhost:7051\\
+					\hline
+				\end{tabular}
+			}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Interactuar con la red}
+		Ahora, el nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{consultar todos los carros.}\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					peer chaincode query -C mychannel -n fabcar -c '\{``Args":[``queryAllCars"]\}'\\
+					\hline
+				\end{tabular}
+			}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Interactuar con la red}
+		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{cambiar el dueño de un auto.}\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride\\
+					orderer.example.com --tls true --cafile\\
+					\${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem\\
+					-C mychannel -n fabcar --peerAddresses localhost:7051 --tlsRootCertFiles\\
+					\${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt\\
+					--peerAddresses localhost:9051 --tlsRootCertFiles\\ \${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt\\
+					-c '\{``function":``changeCarOwner",``Args":[``CAR9",``Dave"]\}'\\
+					\hline
+				\end{tabular}
+			}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Interactuar con la red}
+		Debido a que la política de la red requiere que Org1 y Org2 aprueben la transacción, el \textbf{chaincode invoca} a ambos \textbf{peers} utilizando un \textbf{certificado TLS}.\\
+		\vspace{4mm}
+		El \textbf{chaincode} se instala en los \textbf{peer nodes} de la organización y \textbf{después se despliega} en el canal donde se ocupará. Los miembros del canal deben estar de acuerdo con su definición.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Validar cambios}
+		Ahora, se pueden \textbf{validar los cambios} en el ledger de la blockchain. En esta ocasión se va a utilizar el nodo \textbf{CLI de Org2}, para ello hay que exportar las variables de entorno de Org2:\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					Variables de entorno para Org2\\
+					\hline
+					export CORE\_PEER\_TLS\_ENABLED=true\\
+					export CORE\_PEER\_LOCALMSPID=``Org2MSP"\\
+					export CORE\_PEER\_TLS\_ROOTCERT\_FILE=\${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt\\
+					export CORE\_PEER\_MSPCONFIGPATH=\${PWD}/organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp\\
+					export CORE\_PEER\_ADDRESS=localhost:9051\\
+					\hline
+				\end{tabular}
+			}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Validar cambios}
+		El nodo \textbf{CLI} puede \textbf{solicitar el ledger} del canal al que pertenece y hacer transacciones: \textbf{Consultar un carro}\\
+		\begin{table}[h]
+			\centering
+			\resizebox{1\textwidth}{!} {
+				\begin{tabular}{ | l | }
+					\hline
+					peer chaincode query -C mychannel -n fabcar -c '\{``Args":[``queryAllCars"]\}'\\
+					\hline
+				\end{tabular}
+			}
+		\end{table}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Dar de baja la red}
+		Para \textbf{terminar} un proyecto se debe \textbf{dar de baja la red}. El comando \textbf{down} detiene y elimina los nodos, los contendores, las organizaciones, el material criptográfico, los chaincodes, los registros Docker, los canales y los volúmenes Docker previamente ejecutados.
+		\begin{center}
+			\setlength{\fboxrule}{1mm}
+			\setlength{\fboxsep}{3mm}
+			\framebox[9cm][c]{
+				\textbf{./network.sh down}
+			}
+		\end{center}
+		\begin{center}
+			\tiny{\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/test\_network.html}}
+		\end{center}
+	\end{frame}
+	
+	\subsection{Logspout}
+	
+	\begin{frame}
+		\frametitle{Logspout (monitordocker.sh)}
+		Es una \textbf{bitácora} de cualquier evento en la red, esta herramienta \textbf{recolecta cualquier flujo de salida} de diferentes contenedores. El script está en commercial-paper/organization/digibank/configuration/cli/. Para \textbf{iniciar} el monitor:\\
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				./monitordocker.sh net\_test \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+		Para \textbf{detener} el monitor:
+		\begin{center}
+			\begin{tabulary}{\linewidth}{L}
+				\hline
+				docker stop logspout \\
+				\hline 
+				docker rm logspout \\
+				\hline
+			\end{tabulary} 
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Referencia}
+		\begin{center}
+			\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/test_network.html}
+		\end{center}
 	\end{frame}
 	
 	\section{Aplicación cliente}
@@ -666,5 +1034,24 @@
 		\begin{center}
 			\url{https://hyperledger-fabric.readthedocs.io/en/release-2.0/tutorial/commercial\_paper.html}
 		\end{center}
+	\end{frame}
+	
+	\section{Referencias}
+	
+	\begin{frame} [allowframebreaks]
+		\frametitle{Referencias}
+		\nocite{hyper, docker, raft}
+		\bibliographystyle{plain}
+		\bibliography{biblio}
+	\end{frame}
+
+	\begin{frame}
+		\centering{
+			{\LARGE Por su atención \LARGE}\\
+			\vspace{5mm}
+			{\Huge \textit{Hyper} \textbf{gracias} \Huge}\\
+			\vspace{5mm}
+			René - Jorge
+		}
 	\end{frame}
 \end{document}

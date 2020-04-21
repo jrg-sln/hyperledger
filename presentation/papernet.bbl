@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{raft}
+Raft consensus~algorithm website.
+\newblock The raft consensus algorithm.
+\newblock URL{ https://raft.github.io}.
+\newblock [Visitada el 03-04-2020].
+
+\bibitem{docker}
+Steven J. Vaughan-Nichols for Linux and Open Source.
+\newblock What is docker and why is it so darn popular?
+\newblock URL{
+  https://www.zdnet.com/article/what-is-docker-and-why-is-it-so-darn-popular/}.
+\newblock [Visitada el 02-04-2020].
+
+\bibitem{hyper}
+Hyperledger.
+\newblock Hyperledger fabric: A blockchain platform for the enterprise.
+\newblock URL{ https://hyperledger-fabric.readthedocs.io/en/release-2.0/}.
+\newblock [Visitada el 29-02-2020].
+
+\end{thebibliography}
